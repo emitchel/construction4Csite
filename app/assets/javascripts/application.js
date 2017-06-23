@@ -21,7 +21,7 @@
 //= require bootstrap-hover-dropdown.min.js
 //= require owl.carousel.min.js
 //= require custom.js
-//= require masterslider.min.js
+//= require masterslider.js
 //= require master-custom.js
 //= require jquery.cubeportfolio.min.js
 
