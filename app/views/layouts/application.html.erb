@@ -22,16 +22,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <span><i class="ion-android-call"></i> +01 555-555-555</span>
-                    <span><i class="ion-ios-email"></i> info@bpress.com</span>
+                    <span><i class="ion-android-call"></i> <%= Constants::PHONE_NUMBER %></span>
+                    <span><i class="ion-ios-email"></i> <%= Constants::EMAIL %></span>
                 </div>
                 <div class="col-sm-6">
                     <ul class="list-inline text-right">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="<%= Constants::URL_FACEBOOK %>"><i class="ion-social-facebook"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/4c-horizontal-color.png" alt=""></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -80,59 +76,60 @@
                     </li>
                     <li><a href="about.html">About</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Services <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="projects-2col.html">2 Columns</a></li>
-                            <li><a href="projects.html">3 Columns</a></li>
-                            <li><a href="projects-4col.html">4 Columns</a></li>
-                            <li><a href="projects-full-width.html">Full width</a></li>
-                            <li><a href="single-project.html">Single Project</a></li>
+                            <li><a href="service.html">Home Remodeling</a></li>
+                            <li><a href="renovation-service.html">Decks & Carpentry</a></li>
+                            <li><a href="construction-service.html">Doors & Windows </a></li>
+                            <li><a href="interior-service.html">Masonry Concrete</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="service.html">All Services</a></li>
-                            <li><a href="renovation-service.html">House renovation</a></li>
-                            <li><a href="management-service.html">Project management</a></li>
-                            <li><a href="construction-service.html">Construction</a></li>
-                            <li><a href="interior-service.html">Interior design</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="tabs.html">Tabs</a></li>
-                            <li><a href="accordoins.html">Accordions</a></li>
-                            <li><a href="grid-system.html">Grid System</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="post.html">Blog Post</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="error-404.html">Error-404</a></li>
-                            <li><a href="full-width.html">Page Full Width</a></li>
-                            <li><a href="page-right-sidebar.html">Page Right Sidebar</a></li>
-                            <li><a href="page-left-sidebar.html">Page Left Sidebar</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="search-toggle"><a href="javascript:void(0)"><i class="ion-search"></i></a>
-                        <form class="search-form">
-                            <input type="text" class="form-control" placeholder="Search here...">
-                            <button type="submit" style="display: none">Search</button>
-                        </form>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container -->
     </nav><!--/nav -->
     <%= yield %>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 margin-btm-30">
+                    <a href="index.html"><img style="width:50px" src="assets/4c-icon-color.png" alt=""></a>
+                    <p>
+                        We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in the Omaha Metro and some surrounding areas.
+                    </p>
+                    <a href="about.html" class="btn btn-link">Read More</a>
+                </div>
+                <div class="col-md-6 margin-btm-30">
+                    <h3>Our Services</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="service.html">Home Remodeling</a></li>
+                        <li><a href="renovation-service.html">Decks & Carpentry</a></li>
+                        <li><a href="construction-service.html">Doors & Windows </a></li>
+                        <li><a href="interior-service.html">Masonry Concrete</a></li>
+                    </ul>                        
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-7">
+                    <ul class="list-inline">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>   
+                </div>
+                <div class="col-sm-5 text-right">
+                    <span>&copy; 2017. All Right Reserved. <%= Constants::TITLE %></span> 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <!--back to top-->
+    <a href="#" class="scrollToTop"><i class="ion-android-arrow-dropup-circle"></i></a>
+    <!--back to top end-->
   </body>
 </html>
