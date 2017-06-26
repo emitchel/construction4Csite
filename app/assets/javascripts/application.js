@@ -59,4 +59,10 @@
         displayType: 'fadeIn',
         displayTypeSpeed: 100
     });
+
+    $('.pop').on('click', function() {
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');   
+    });		
+    
     })(jQuery, window, document);
