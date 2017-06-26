@@ -741,7 +741,10 @@ Top bar style
 .navbar-default {
   background-color: #fff;
   border: 0px;
-  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .navbar-default .navbar-nav > li > a {
