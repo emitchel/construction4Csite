@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails construction4Csite: development" uuid="9ebad01c-86b3-449b-80da-c80fa5de5d41">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>elliotmitchell</user-name>
+    </data-source>
+    <data-source name="Rails construction4Csite: test" uuid="a348abef-98c9-4be9-8995-20d46a51bb40">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>elliotmitchell</user-name>
+    </data-source>
+  </component>
+</project>

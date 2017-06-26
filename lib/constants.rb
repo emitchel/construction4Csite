@@ -3,7 +3,7 @@ module Constants
 
     PHONE_NUMBER = '(402) 616-1814'
 
-    EMAIL = 'bojan.ninkovic@yahoo.com'
+    EMAIL = '4constructionllc@gmail.com'
 
     TITLE = '4C Construction'
 end

@@ -57,6 +57,7 @@ a {
   transition: all 0.3s;
   color: #dd0300;
 }
+
 a:hover {
   color: #aeaeae;
 }
@@ -1774,4 +1775,8 @@ div.no-margin {
 
 .service-desc {
   height: 200px;
+}
+
+.readable-small-text {
+    font-family: "Droid Sans", sans-serif
 }

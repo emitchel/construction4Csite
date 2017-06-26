@@ -12,8 +12,8 @@
     <link rel="image_src" href="assets/4c-icon-color.png" />
     <meta name="description" content="We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in the Omaha Metro and some surrounding areas."/>
     <title><%= Constants::TITLE %></title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,8 +30,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <span><i class="ion-android-call"></i> <%= Constants::PHONE_NUMBER %></span>
-                    <span><i class="ion-ios-email"></i> <%= Constants::EMAIL %></span>
+                    <span class="readable-small-text"><i class="ion-android-call"></i> <%= Constants::PHONE_NUMBER %></span>
+                    <span class="readable-small-text"><i class="ion-ios-email"></i> <%= Constants::EMAIL %></span>
                 </div>
                 <div class="col-sm-6">
                     <ul class="list-inline text-right">
@@ -155,6 +155,7 @@
             <img src="" class="imagepreview" style="width: 100%;" >
         </div>
         </div>
+    </div>
     </div>
   </body>
 </html>
