@@ -1771,3 +1771,7 @@ div.no-margin {
 .bottom_lbi {
   color: #989898;
 }
+
+.service-desc {
+  height: 200px;
+}
