@@ -1744,3 +1744,14 @@ Footer styles
 .time {
   color: #fff;
 }
+
+.passionate {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+div.no-margin {
+  margin-left:-500px;
+  margin-right:-500px;
+} 
