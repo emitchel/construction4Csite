@@ -680,6 +680,7 @@ Top bar style
 */
 .top-bar {
   padding-top: 10px;
+  border-bottom: 1px solid #f0f0f0;
 }
 .top-bar span {
   display: inline-block;
