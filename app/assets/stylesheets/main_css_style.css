@@ -1755,3 +1755,15 @@ div.no-margin {
   margin-left:-500px;
   margin-right:-500px;
 } 
+
+.col-centered{
+  text-align: center;
+}
+
+.bold_italic {
+  font-family: '4cconstruction_bold_italic';
+}
+
+.bottom_lbi {
+  color: #989898;
+}
