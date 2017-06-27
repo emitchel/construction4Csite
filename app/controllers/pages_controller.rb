@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 
   def contact_us
 
-    render json: { message: 'Item number #{params[:id]} does not exist'}
+    render json: { message: ''}
   end
 
 
