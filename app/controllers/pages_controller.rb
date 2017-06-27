@@ -9,8 +9,9 @@ class PagesController < ApplicationController
   def contact; end
 
   def contact_us
-
-    render json: { message: 'success'}
+    lead = Lead.new(name: params[:name], email: params[:email], message: params[:message], source: params[:how])
+    lead.save
+    render json: { success: true, message: 'success'}
   end
 
 

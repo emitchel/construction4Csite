@@ -9,7 +9,7 @@ var entityMap = {
     '=': '&#x3D;'
 };
 
-function escapeHtml (string) {
+function escapeHtml(string) {
     return String(string).replace(/[&<>"'`=\/]/g, function (s) {
         return entityMap[s];
     });
@@ -17,6 +17,10 @@ function escapeHtml (string) {
 
 function elToSafeJson(el) {
     return escapeHtml(el.val());
+}
+
+function getAlertHtml(text) {
+    return '<div class="alert alert-info"><strong>' + text + '</strong></div>'
 }
 
 $('.b-contact').submit(function () {
@@ -34,11 +38,24 @@ $('.b-contact').submit(function () {
     $message.attr('disabled', 'disabled');
     $submit.attr('disabled', 'disabled');
 
-    $dataStatus.show().html('<div class="alert alert-info"><strong>Loading...</strong></div>');
+    $dataStatus.show().html(getAlertHtml("Loading..."));
 
-    $.post(Routes.contact_us_pages_path(), {email: elToSafeJson($email), name: elToSafeJson($name), how :elToSafeJson($how), message: elToSafeJson($message)})
-        .done(function(data) {
+    $.post(Routes.contact_us_pages_path(), {
+        email: elToSafeJson($email),
+        name: elToSafeJson($name),
+        how: elToSafeJson($how),
+        message: elToSafeJson($message)
+    })
+        .done(function (data) {
             console.log(data);
+            if (data.success) {
+                $email.removeAttr('disabled');
+                $name.removeAttr('disabled');
+                $how.removeAttr('disabled');
+                $message.removeAttr('disabled');
+                $submit.removeAttr('disabled');
+                $dataStatus.html(getAlertHtml("Message Sent Successfully")).fadeIn();
+            }
         });
 
     return false;
