@@ -13,34 +13,32 @@ $('.b-contact').submit(function() {
 		$submit.attr('disabled', 'disabled');
 		
 		$dataStatus.show().html('<div class="alert alert-info"><strong>Loading...</strong></div>');
-        $.post(Routes.contact_us_path(), {})
-        .done(function (data) {
-            console.log(data);
-        });
-		// $.ajax({ // Send an offer process with AJAX
-		// 	type: 'POST',
-		// 	url: 'contact_form/process-contact.php',
-		// 	data: submitData + '&action=add',
-		// 	dataType: 'html',
-		// 	success: function(msg){
-		// 		if (parseInt(msg, 0) !== 0) {
-		// 			var msg_split = msg.split('|');
-		// 			if (msg_split[0] === 'success') {
-		// 				$email.val('').removeAttr('disabled');
-		// 				$name.val('').removeAttr('disabled');
-		// 				$message.val('').removeAttr('disabled');
-		// 				$submit.removeAttr('disabled');
-		// 				$dataStatus.html(msg_split[1]).fadeIn();
-		// 			} else {
-		// 				$email.removeAttr('disabled');
-		// 				$name.removeAttr('disabled');
-		// 				$message.removeAttr('disabled');
-		// 				$submit.removeAttr('disabled');
-		// 				$dataStatus.html(msg_split[1]).fadeIn();
-		// 			}
-		// 		}
-		// 	}
-		// });
+		$.ajax({ // Send an offer process with AJAX
+			type: 'POST',
+			url: Routes.contact_us_pages_path(),
+			data: {},
+            contentType: 'application/json',
+			dataType: 'json',
+			success: function(msg){
+			    console.log(msg);
+				// if (parseInt(msg, 0) !== 0) {
+				// 	var msg_split = msg.split('|');
+				// 	if (msg_split[0] === 'success') {
+				// 		$email.val('').removeAttr('disabled');
+				// 		$name.val('').removeAttr('disabled');
+				// 		$message.val('').removeAttr('disabled');
+				// 		$submit.removeAttr('disabled');
+				// 		$dataStatus.html(msg_split[1]).fadeIn();
+				// 	} else {
+				// 		$email.removeAttr('disabled');
+				// 		$name.removeAttr('disabled');
+				// 		$message.removeAttr('disabled');
+				// 		$submit.removeAttr('disabled');
+				// 		$dataStatus.html(msg_split[1]).fadeIn();
+				// 	}
+				// }
+			}
+		});
 		
 		return false;
 	});

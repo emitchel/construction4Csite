@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   before_action :check_service, only: [:services]
-  skip_before_action :verify_authenticity_token, only: [:send_contact]
+  skip_before_action :verify_authenticity_token, only: [:contact_us]
 
   def index; end
 
@@ -8,9 +8,9 @@ class PagesController < ApplicationController
 
   def contact; end
 
-  def send_contact
+  def contact_us
 
-    render ''
+    render json: { message: 'Item number #{params[:id]} does not exist'}
   end
 
 

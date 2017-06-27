@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
 
-  post 'contact_us' => 'pages#send_contact'
+  resources :pages, only: [] do
+    collection do
+      post :contact_us
+    end
+  end
 
   root 'pages#index'
 end
