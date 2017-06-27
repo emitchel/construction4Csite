@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4caef9f2-9518-471a-8187-7b1aca3419ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lead_emailer.rb" afterPath="$PROJECT_DIR$/lib/lead_emailer.rb" />
-    </list>
+    <list default="true" id="4caef9f2-9518-471a-8187-7b1aca3419ca" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -545,12 +541,12 @@
       <option name="presentableId" value="Default" />
       <updated>1498513624412</updated>
       <workItem from="1498514335865" duration="32265000" />
-      <workItem from="1498598425656" duration="75000" />
+      <workItem from="1498598425656" duration="269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32340000" />
+    <option name="totallyTimeSpent" value="32534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1000" extended-state="6" />
