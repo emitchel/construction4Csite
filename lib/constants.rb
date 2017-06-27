@@ -5,6 +5,8 @@ module Constants
 
     EMAIL = '4constructionllc@gmail.com'
 
+    ADDRESS = '7901 S 22nd Ave. Bellevue, Nebraska, NE 68147'
+
     TITLE = '4C Construction'
 
 end
