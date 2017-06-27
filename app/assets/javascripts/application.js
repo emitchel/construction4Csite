@@ -21,6 +21,7 @@
 //= require owl.carousel.min.js
 //= require custom.js
 //= require masterslider.js
+//= require lightbox.js
 //= require master-custom.js
 //= require jquery.cubeportfolio.min.js
 
