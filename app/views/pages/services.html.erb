@@ -1,0 +1,52 @@
+<!--page title-->
+<div class="dzsparallaxer auto-init" data-options='{direction: "reverse"}' style="height: 300px;">
+
+  <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= @background_picture %>)">
+  </div>
+  <div class=" parallax-text center-it page-title">
+    <h2><%= @title %></h2>
+  </div>
+</div>
+<!--page title-->
+<div class="space80"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar-widget">
+        <ul class="list-unstyled side-nav">
+          <li><a href="service.html">All Services</a></li>
+          <li class="active"><a href="renovation-service.html">House renovation</a></li>
+          <li><a href="management-service.html">Project management</a></li>
+          <li><a href="construction-service.html">Construction</a></li>
+          <li><a href="interior-service.html">Interior design</a></li>
+        </ul>
+      </div>
+    </div><!--col-->
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-sm-7">
+          <h3><%= @subtitle %></h3>
+          <div class="border-width"></div>
+          <p>
+            <%= @description %>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <div class="service-box">
+            <div class="service-thumb">
+              <img src=<%= @picture1 %> alt="" class="img-responsive">
+              <div class="space20"></div>
+              <img src=<%= @picture2 %> alt="" class="img-responsive">
+              <div class="space20"></div>
+              <img src=<%= @picture3 %> alt="" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space20"></div>
+    </div>
+  </div><!--row-->
+
+</div>
