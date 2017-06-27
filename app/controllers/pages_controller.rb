@@ -35,7 +35,7 @@ class PagesController < ApplicationController
                         description: 'We do decks and variations of carpentry',
                         background_picture: '/assets/15.jpg',
                         picture1: '/assets/5.jpg',
-                        picture2: '/assets/13.jpg',
+                        picture2: '/assets/goodeck.jpg',
                         picture3: '/assets/familyroom3.jpg' }.freeze
   MASONRY_SERVICE = { title: 'Concrete Service',
                       subtitle: 'Masonry Concrete ',
