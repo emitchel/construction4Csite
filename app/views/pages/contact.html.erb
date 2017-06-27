@@ -1,0 +1,102 @@
+<!--page title-->
+<div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 300px;">
+
+  <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/Front.jpg)">
+  </div>
+
+  <div class="semi-black-overlay"></div>
+  <div class=" parallax-text center-it page-title">
+    <h2>Contact Us</h2>
+  </div>
+</div>
+<!--page title-->
+<!--Google Maps-->
+<div class="google-map-container">
+  <div id="googlemaps" style="width: 100%;height: 400px;"></div>
+</div>
+<!--/Google Maps-->
+<div class="space80"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 margin-btm-30">
+      <form method="post" action="#" class="b-contact">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 margin-btm-20">
+                <input type="text" name="name" class="form-control" placeholder="Full Name...." />
+              </div>
+              <div class="col-sm-12 margin-btm-20">
+                <input type="text" name="email" class="form-control" placeholder="Email Address...." />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <textarea name="message" class="form-control margin-btm-20" rows="5" placeholder="Message...."></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="data-status animated fadeInDown"></div> <!-- data submit status -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-right">
+            <button type="submit" name="submit" class="btn btn-xl btn-skin margin-b-20">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div><!--contact col end-->
+    <div class="col-sm-3 col-sm-offset-1">
+
+      <div class="sidebar-widget">
+        <h3>Contact info</h3>
+        <hr>
+        <span class="margin-btm-10">
+                            <%= Constants::ADDRESS_FIRST_LINE %> <br>
+                            <%= Constants::ADDRESS_SECOND_LINE %>
+                        </span><br>
+        <span><b>Phone:</b> <%= Constants::PHONE_NUMBER %></span><br>
+        <span><b>Email:</b> <%= Constants::EMAIL %></span>
+      </div><!--sidebar widget-->
+      <div class="sidebar-widget">
+        <h3>Contact info</h3>
+        <hr>
+        <ul class="list-inline social">
+          <li><a href="<%= Constants::URL_FACEBOOK %>"><i class="ion-social-facebook"></i></a></li>
+        </ul>
+      </div><!--sidebar widget-->
+    </div>
+  </div>
+</div>
+
+<div class="space80"></div>
+
+<script src="assets/contact.js"></script>
+<!-- Google Maps -->
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBENlIxSKmTEK2fJeKjKo_JMxC9jE2IkL4"></script>
+<script src="assets/jquery.gmaps.min.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+
+            $('#googlemaps').gMap({
+                maptype: 'ROADMAP',
+                scrollwheel: false,
+                zoom: 13,
+                markers: [
+                    {
+                        address: '<%= Constants::ADDRESS %>', // Your Adress Here
+                        html: '<strong>Our Office</strong><br>7901 S 22nd Ave. </br>Bellevue, Nebraska, NE 68147 ',
+                        popup: false,
+                        icon: {
+                            image: "assets/marker-red.png",
+                            iconsize: [28, 40],
+                            iconanchor: [20, 40]
+                        }
+                    }
+                ]
+            });
+        });
+    })(this.jQuery);
+</script>

@@ -53,7 +53,6 @@
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.4, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.7, rbenv: 2.0.0-p247) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.0.3, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.3, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.4, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.2, rbenv: 2.0.0-p247) [gem]" level="application" />
