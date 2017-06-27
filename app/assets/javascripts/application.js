@@ -19,6 +19,7 @@
 //= require dzsparallaxer.js
 //= require bootstrap-hover-dropdown.min.js
 //= require owl.carousel.min.js
+//= require js-routes
 //= require custom.js
 //= require masterslider.js
 //= require lightbox.js

@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   before_action :check_service, only: [:services]
+  skip_before_action :verify_authenticity_token, only: [:send_contact]
 
   def index; end
 
@@ -9,7 +10,7 @@ class PagesController < ApplicationController
 
   def send_contact
 
-    render ajax_success('success')
+    render ''
   end
 
 

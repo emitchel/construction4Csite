@@ -13,10 +13,10 @@ $('.b-contact').submit(function() {
 		$submit.attr('disabled', 'disabled');
 		
 		$dataStatus.show().html('<div class="alert alert-info"><strong>Loading...</strong></div>');
-    // $.post(Routes.save_settings_predictive_dialer_temp_index_path(), { phone_numbers: phoneNumbers })
-    //     .done(function(data) {
-    //         VTToast.showSuccess(data.data);
-    //     });
+        $.post(Routes.contact_us_path(), {})
+        .done(function (data) {
+            console.log(data);
+        });
 		// $.ajax({ // Send an offer process with AJAX
 		// 	type: 'POST',
 		// 	url: 'contact_form/process-contact.php',
