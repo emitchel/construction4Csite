@@ -32,33 +32,38 @@ $('.b-contact').submit(function () {
     var $submit = $form.find('input[name="submit"]');
     var $dataStatus = $form.find('.data-status');
 
-    $email.attr('disabled', 'disabled');
-    $name.attr('disabled', 'disabled');
-    $how.attr('disabled', 'disabled');
-    $message.attr('disabled', 'disabled');
-    $submit.attr('disabled', 'disabled');
+    if ($email.val().trim() == "") {
 
-    $dataStatus.show().html(getAlertHtml("Loading..."));
+        $dataStatus.show().html(getAlertHtml("Email can't be blank"));
+    } else {
 
-    $.post(Routes.contact_us_pages_path(), {
-        email: elToSafeJson($email),
-        name: elToSafeJson($name),
-        how: elToSafeJson($how),
-        message: elToSafeJson($message)
-    })
-        .done(function (data) {
-            console.log(data);
-            $email.removeAttr('disabled');
-            $name.removeAttr('disabled');
-            $how.removeAttr('disabled');
-            $message.removeAttr('disabled');
-            $submit.removeAttr('disabled');
-            if (data.success) {
-                $dataStatus.html(getAlertHtml("Message Sent Successfully")).fadeIn();
-            } else {
-                $dataStatus.html(getAlertHtml("Message did not send, please try again later")).fadeIn();
-            }
-        });
+        $email.attr('disabled', 'disabled');
+        $name.attr('disabled', 'disabled');
+        $how.attr('disabled', 'disabled');
+        $message.attr('disabled', 'disabled');
+        $submit.attr('disabled', 'disabled');
+        $dataStatus.show().html(getAlertHtml("Loading..."));
+
+        $.post(Routes.contact_us_pages_path(), {
+            email: elToSafeJson($email),
+            name: elToSafeJson($name),
+            how: elToSafeJson($how),
+            message: elToSafeJson($message)
+        })
+            .done(function (data) {
+                console.log(data);
+                $email.removeAttr('disabled');
+                $name.removeAttr('disabled');
+                $how.removeAttr('disabled');
+                $message.removeAttr('disabled');
+                $submit.removeAttr('disabled');
+                if (data.success) {
+                    $dataStatus.html(getAlertHtml("Message Sent Successfully")).fadeIn();
+                } else {
+                    $dataStatus.html(getAlertHtml("Message did not send, please try again later")).fadeIn();
+                }
+            });
+    }
 
     return false;
 });

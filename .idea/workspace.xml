@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4caef9f2-9518-471a-8187-7b1aca3419ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/about.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/about.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/contact.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/contact.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -33,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+            <state relative-caret-position="118">
+              <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -58,6 +57,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -140,7 +149,6 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/contact.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
         <option value="$PROJECT_DIR$/lib/lead_emailer.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -148,6 +156,7 @@
         <option value="$PROJECT_DIR$/app/views/pages/services.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/contact.js" />
       </list>
     </option>
   </component>
@@ -295,7 +304,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;application.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/application.css&#10;application.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;CONTACT.JS&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;conta&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;contact.html.erb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;contact&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;test&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/test.rb&#10;gemfile&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/Gemfile&#10;environment.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environment.rb&#10;contact.h&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;application.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/application.js&#10;contact.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;indexh&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;ROUTES&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pages&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;CONTA&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;index&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;rout&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pagescon&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;application&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;custom&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/custom.js&#10;constants&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/lib/constants.rb&#10;manifest&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/config/manifest.js&#10;routes.&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;mainstyle&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;mainstyles&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="contact&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;main&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;application.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/application.css&#10;application.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;CONTACT.JS&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;conta&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;contact.html.erb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;test&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/test.rb&#10;gemfile&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/Gemfile&#10;environment.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environment.rb&#10;contact.h&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;application.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/application.js&#10;contact.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;indexh&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;ROUTES&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pages&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;CONTA&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;index&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;rout&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pagescon&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;application&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;custom&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/custom.js&#10;constants&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/lib/constants.rb&#10;manifest&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/config/manifest.js&#10;routes.&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;mainstyle&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;mainstyles&#9;null&#9;null" />
     <property name="editorconfig.notification" value="'utf-8'" />
   </component>
   <component name="RecentsManager">
@@ -499,12 +508,12 @@
       <option name="presentableId" value="Default" />
       <updated>1498513624412</updated>
       <workItem from="1498514335865" duration="32265000" />
-      <workItem from="1498598425656" duration="744000" />
+      <workItem from="1498598425656" duration="1301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33009000" />
+    <option name="totallyTimeSpent" value="33566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1000" extended-state="6" />
@@ -802,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/rss/rss.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3825">
@@ -892,8 +893,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+        <state relative-caret-position="118">
+          <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding />
         </state>
       </provider>
