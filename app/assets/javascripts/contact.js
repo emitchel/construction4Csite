@@ -13,31 +13,34 @@ $('.b-contact').submit(function() {
 		$submit.attr('disabled', 'disabled');
 		
 		$dataStatus.show().html('<div class="alert alert-info"><strong>Loading...</strong></div>');
-		
-		$.ajax({ // Send an offer process with AJAX
-			type: 'POST',
-			url: 'contact_form/process-contact.php',
-			data: submitData + '&action=add',
-			dataType: 'html',
-			success: function(msg){
-				if (parseInt(msg, 0) !== 0) {
-					var msg_split = msg.split('|');
-					if (msg_split[0] === 'success') {
-						$email.val('').removeAttr('disabled');
-						$name.val('').removeAttr('disabled');
-						$message.val('').removeAttr('disabled');
-						$submit.removeAttr('disabled');
-						$dataStatus.html(msg_split[1]).fadeIn();
-					} else {
-						$email.removeAttr('disabled');
-						$name.removeAttr('disabled');
-						$message.removeAttr('disabled');
-						$submit.removeAttr('disabled');
-						$dataStatus.html(msg_split[1]).fadeIn();
-					}
-				}
-			}
-		});
+    // $.post(Routes.save_settings_predictive_dialer_temp_index_path(), { phone_numbers: phoneNumbers })
+    //     .done(function(data) {
+    //         VTToast.showSuccess(data.data);
+    //     });
+		// $.ajax({ // Send an offer process with AJAX
+		// 	type: 'POST',
+		// 	url: 'contact_form/process-contact.php',
+		// 	data: submitData + '&action=add',
+		// 	dataType: 'html',
+		// 	success: function(msg){
+		// 		if (parseInt(msg, 0) !== 0) {
+		// 			var msg_split = msg.split('|');
+		// 			if (msg_split[0] === 'success') {
+		// 				$email.val('').removeAttr('disabled');
+		// 				$name.val('').removeAttr('disabled');
+		// 				$message.val('').removeAttr('disabled');
+		// 				$submit.removeAttr('disabled');
+		// 				$dataStatus.html(msg_split[1]).fadeIn();
+		// 			} else {
+		// 				$email.removeAttr('disabled');
+		// 				$name.removeAttr('disabled');
+		// 				$message.removeAttr('disabled');
+		// 				$submit.removeAttr('disabled');
+		// 				$dataStatus.html(msg_split[1]).fadeIn();
+		// 			}
+		// 		}
+		// 	}
+		// });
 		
 		return false;
 	});

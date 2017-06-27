@@ -7,6 +7,12 @@ class PagesController < ApplicationController
 
   def contact; end
 
+  def send_contact
+
+    render ajax_success('success')
+  end
+
+
   def services
     service = service_content
     @house_reno_active = active?('renovation')
