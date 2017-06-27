@@ -1,10 +1,11 @@
 <!--page title-->
 <div class="dzsparallaxer auto-init" data-options='{direction: "reverse"}' style="height: 300px;">
-
+  <div class="semi-black-overlay"></div>
   <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= @background_picture %>)">
   </div>
+  <div class="semi-black-overlay"></div>
   <div class=" parallax-text center-it page-title">
-    <h2><%= @title %></h2>
+    <h2 style="color:#fff"><%= @title %></h2>
   </div>
 </div>
 <!--page title-->
@@ -15,9 +16,15 @@
     <div class="col-md-3">
       <div class="sidebar-widget">
         <ul class="list-unstyled side-nav">
-          <li class=<%= @house_reno_active %>><a href="renovation-service.html">House renovation</a></li>
-          <li class=<%= @carpentry_active %>><a href="management-service.html">Decks & Carpentry</a></li>
-          <li class=<%= @masonry_active %>><a href="construction-service.html">Masonry Concrete</a></li>
+          <li class=<%= @house_reno_active %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>>House
+              renovation</a></li>
+          <li class=<%= @carpentry_active %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>>Decks &
+              Carpentry</a></li>
+          <li class=<%= @masonry_active %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'masonry' %>>Masonry
+              Concrete</a></li>
         </ul>
       </div>
     </div><!--col-->

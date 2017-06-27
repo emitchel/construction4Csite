@@ -6,4 +6,5 @@ module Constants
     EMAIL = '4constructionllc@gmail.com'
 
     TITLE = '4C Construction'
+
 end

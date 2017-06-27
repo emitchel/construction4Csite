@@ -15,7 +15,7 @@
                                 <div class="space20"></div>
                                 <h3 style="color:#fff"><i>"Customer, Cost, Communication, Courtesy"</i></h3>
                                 <div class="buttons scroll-to">
-                                    <a href="#about" class="btn btn-white btn-lg">About us</a>
+                                    <a href="#about" class="btn btn-white btn-lg">Contact us</a>
                                     <a href="#work" class="btn btn-skin btn-lg">Services</a>
                                 </div>     
                             </div>
@@ -118,6 +118,7 @@
     <div class="space80"></div>
     <div class="container">
         <div class="center-title margin-btm-50">
+            <a name="work"></a>
             <h1>What We offer</h1>
             <div class="border-width center-align"></div>
         </div><!--center title end-->
@@ -125,7 +126,7 @@
             <div class="item">
                 <div class="service-box">
                     <div class="service-thumb">
-                        <a href="#"><img src="assets/frontside2.jpg" alt="" class="img-responsive"></a>
+                        <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>"><img src="assets/frontside2.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="service-desc">
                         <h4 class="text-uppercase">Home Remodeling</h4>
@@ -139,7 +140,7 @@
             <div class="item">
                 <div class="service-box">
                     <div class="service-thumb">
-                        <a href="#"><img src="assets/5.jpg" alt="" class="img-responsive"></a>
+                        <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>"><img src="assets/5.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="service-desc">
                         <h4 class="text-uppercase">Decks & Carpentry</h4>
@@ -153,7 +154,7 @@
             <div class="item">
                 <div class="service-box">
                     <div class="service-thumb">
-                        <a href="#"><img src="assets/3.jpg" alt="" class="img-responsive"></a>
+                        <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'masonry' %>"><img src="assets/3.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="service-desc">
                         <h4 class="text-uppercase">Masonry Concrete</h4>

@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require rails-ujs
-//= require turbolinks
 //= require jquery-migrate.min.js
 //= require bootstrap.min.js
 //= require bootstrap-hover-dropdown.min.js

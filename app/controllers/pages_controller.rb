@@ -1,8 +1,9 @@
 class PagesController < ApplicationController
   before_action :check_service, only: [:services]
 
-  def index
-  end
+  def index; end
+
+  def about; end
 
   def services
     service = service_content
