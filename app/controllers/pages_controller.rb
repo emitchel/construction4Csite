@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 
   def contact_us
 
-    render json: { message: ''}
+    render json: { message: 'success'}
   end
 
 
