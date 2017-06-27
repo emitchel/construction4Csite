@@ -5,6 +5,8 @@ class PagesController < ApplicationController
 
   def about; end
 
+  def contact; end
+
   def services
     service = service_content
     @house_reno_active = active?('renovation')
