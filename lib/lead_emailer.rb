@@ -10,7 +10,7 @@ module LeadEmailer
       from = Email.new(email: LEAD_EMAIL_FROM)
       to = Email.new(email: LEAD_EMAIL_TO)
       subject = 'New 4C Lead'
-      content = Content.new(type: 'html', value: LeadEmailer.value_from_lead(lead))
+      content = Content.new(type: 'text/html', value: LeadEmailer.value_from_lead(lead))
       mail = Mail.new(from, subject, to, content)
       sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
       response = sg.client.mail._('send').post(request_body: mail.to_json)
@@ -25,12 +25,14 @@ module LeadEmailer
   end
 
   def self.value_from_lead(lead)
-    value = 'New Lead for 4C Construction <br>'
-    value += "Name: #{lead.name} <br>"
-    value += "Email: #{lead.email} <br>"
-    value += "How they found out about us: #{lead.source} <br>"
-    value += "Message: #{lead.message} <br>"
-    value + "Lead created at: #{lead.created_at} <br>"
+    value = '<html><head></head><body>'
+    value += '<p>New Lead for 4C Construction </p>'
+    value += "<p>Name: #{lead.name} </p>"
+    value += "<p>Email: #{lead.email} </p>"
+    value += "<p>How they found out about us: #{lead.source} </p>"
+    value += "<p>Message: #{lead.message} </p>"
+    value += "<p>Lead created at: #{lead.created_at} </p>"
+    value + '</body></html>'
   end
 
 end
