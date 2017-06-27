@@ -48,13 +48,15 @@ $('.b-contact').submit(function () {
     })
         .done(function (data) {
             console.log(data);
+            $email.removeAttr('disabled');
+            $name.removeAttr('disabled');
+            $how.removeAttr('disabled');
+            $message.removeAttr('disabled');
+            $submit.removeAttr('disabled');
             if (data.success) {
-                $email.removeAttr('disabled');
-                $name.removeAttr('disabled');
-                $how.removeAttr('disabled');
-                $message.removeAttr('disabled');
-                $submit.removeAttr('disabled');
                 $dataStatus.html(getAlertHtml("Message Sent Successfully")).fadeIn();
+            } else {
+                $dataStatus.html(getAlertHtml("Message did not send, please try again later")).fadeIn();
             }
         });
 
