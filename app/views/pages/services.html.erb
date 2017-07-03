@@ -6,7 +6,7 @@
   </div>
   <div class="semi-black-overlay"></div>
   <div class=" parallax-text center-it page-title">
-    <h2 style="color:#fff"><%= @title %></h2>
+    <h2 style="color:#fff"><%= @service_title %></h2>
   </div>
 </div>
 <!--page title-->
@@ -17,15 +17,14 @@
     <div class="col-md-3">
       <div class="sidebar-widget">
         <ul class="list-unstyled side-nav">
+          <li class=<%= @custom_homes_active %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>>Custom Home Building</a></li>
           <li class=<%= @house_reno_active %>>
             <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>>House
               renovation</a></li>
           <li class=<%= @carpentry_active %>>
             <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>>Decks &
               Carpentry</a></li>
-          <li class=<%= @masonry_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'masonry' %>>Masonry
-              Concrete</a></li>
         </ul>
       </div>
     </div><!--col-->

@@ -19,8 +19,8 @@ class PagesController < ApplicationController
     service = service_content
     @house_reno_active = active?('renovation')
     @carpentry_active = active?('carpentry')
-    @masonry_active = active?('masonry')
-    @title = service[:title]
+    @custom_homes_active = active?('homes')
+    @service_title = service[:title]
     @subtitle = service[:subtitle]
     @description = service[:description]
     @background_picture = service[:background_picture]
@@ -31,7 +31,7 @@ class PagesController < ApplicationController
 
   private
 
-  SUPPORTED_SERVICES = %w[renovation carpentry masonry].freeze
+  SUPPORTED_SERVICES = %w[renovation carpentry homes].freeze
 
   RENOVATION_SERVICE = { title: 'Renovation Service',
                          subtitle: 'House Renovation',
@@ -47,13 +47,13 @@ class PagesController < ApplicationController
                         picture1: '/assets/5.jpg',
                         picture2: '/assets/goodeck.jpg',
                         picture3: '/assets/familyroom3.jpg' }.freeze
-  MASONRY_SERVICE = { title: 'Concrete Service',
-                      subtitle: 'Masonry Concrete ',
-                      description: 'We do various concrete services',
-                      background_picture: '/assets/basement1.jpg',
-                      picture1: '/assets/1.jpg',
-                      picture2: '/assets/3.jpg',
-                      picture3: '/assets/basement3.jpg' }.freeze
+  HOME_BUILDING_SERVICE = { title: 'Home Building Service',
+                            subtitle: 'Custom Home Building',
+                            description: 'We do various concrete services',
+                            background_picture: '/assets/blueprint1.jpg',
+                            picture1: '/assets/Front.jpg',
+                            picture2: '/assets/3.jpg',
+                            picture3: '/assets/basement1.jpg' }.freeze
 
   def check_service
     raise ActionController::RoutingError.new('Not Found') unless SUPPORTED_SERVICES.include?(service)
@@ -76,8 +76,8 @@ class PagesController < ApplicationController
       RENOVATION_SERVICE
     elsif service == 'carpentry'
       CARPENTRY_SERVICE
-    elsif service == 'masonry'
-      MASONRY_SERVICE
+    elsif service == 'homes'
+      HOME_BUILDING_SERVICE
     end
   end
 end

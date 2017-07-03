@@ -19,7 +19,7 @@ module LeadEmailer
       puts response.headers
       true
     rescue Exception => e
-      puts 'ERROR: ' + e.message
+      puts 'Lead Emailer ERROR: ' + e.message
       false
     end
   end

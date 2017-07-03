@@ -63,12 +63,11 @@
           <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home Building</a></li>
             <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>">Home
               Remodeling</a></li>
             <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>">Decks &
               Carpentry</a></li>
-            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'masonry' %>">Masonry
-              Concrete</a></li>
           </ul>
         </li>
         <li><a href="<%= url_for :controller => 'pages', :action => 'contact' %>">Contact</a></li>
@@ -95,12 +94,11 @@
       <div class="col-md-6 margin-btm-30">
         <h3>Our Services</h3>
         <ul class="list-unstyled">
+          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home Building</a></li>
           <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>">Home
             Remodeling</a></li>
           <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>">Decks &
             Carpentry</a></li>
-          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'masonry' %>">Masonry
-            Concrete</a></li>
         </ul>
       </div>
     </div>
