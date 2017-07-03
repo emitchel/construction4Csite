@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4caef9f2-9518-471a-8187-7b1aca3419ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/blueprint1.jpg" afterPath="$PROJECT_DIR$/app/assets/images/blueprint1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/about.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/about.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -43,11 +42,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="125">
+              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_css_style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="1911" column="14" lean-forward="false" selection-start-line="1911" selection-start-column="14" selection-end-line="1911" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -97,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>empty</find>
       <find>contact</find>
       <find>assets</find>
       <find>empty?</find>
@@ -127,6 +145,7 @@
       <find>tea</find>
       <find>team2</find>
       <find>masonry</find>
+      <find>center</find>
     </findStrings>
     <replaceStrings>
       <replace>assets</replace>
@@ -160,7 +179,6 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/contact.js" />
         <option value="$PROJECT_DIR$/lib/lead_emailer.rb" />
@@ -169,6 +187,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
       </list>
     </option>
   </component>
@@ -316,7 +335,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="about&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/about.html.erb&#10;pages&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;routes&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;contact&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;main&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;application.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/application.css&#10;application.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;CONTACT.JS&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;conta&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;contact.html.erb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;test&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/test.rb&#10;gemfile&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/Gemfile&#10;environment.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environment.rb&#10;contact.h&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;application.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/application.js&#10;contact.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;indexh&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;ROUTES&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;CONTA&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;index&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;rout&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pagescon&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;application&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;custom&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/custom.js&#10;constants&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/lib/constants.rb&#10;manifest&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/config/manifest.js&#10;routes.&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;mainstyle&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;mainstyles&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;application.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/application.css&#10;about&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/about.html.erb&#10;pages&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;routes&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;contact&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;application.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;CONTACT.JS&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;conta&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;contact.html.erb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;test&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/test.rb&#10;gemfile&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/Gemfile&#10;environment.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environment.rb&#10;contact.h&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;application.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/application.js&#10;contact.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;indexh&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;ROUTES&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;CONTA&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;index&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;rout&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pagescon&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;application&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;custom&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/custom.js&#10;constants&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/lib/constants.rb&#10;manifest&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/config/manifest.js&#10;routes.&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;mainstyle&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;mainstyles&#9;null&#9;null" />
     <property name="editorconfig.notification" value="'utf-8'" />
   </component>
   <component name="RecentsManager">
@@ -523,12 +542,12 @@
       <workItem from="1498598425656" duration="1492000" />
       <workItem from="1498666601657" duration="468000" />
       <workItem from="1498673295771" duration="1103000" />
-      <workItem from="1498840664567" duration="3851000" />
+      <workItem from="1498840664567" duration="4429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39179000" />
+    <option name="totallyTimeSpent" value="39757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
@@ -840,20 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="257" column="40" lean-forward="false" selection-start-line="257" selection-start-column="40" selection-end-line="257" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -891,7 +896,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="20" />
           <folding>
-            <element signature="n#style#0;n#h2#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#3;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -938,8 +943,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="125">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="1911" column="14" lean-forward="false" selection-start-line="1911" selection-start-column="14" selection-end-line="1911" selection-end-column="14" />
           <folding />
         </state>
       </provider>
