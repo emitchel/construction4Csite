@@ -153,6 +153,9 @@
 
 <script>
     $('.gallery').on('click', function () {
+
+        if( screen.width <= 480 ) return;
+
         $("#image_overlay").attr("src", $(this).prop('src'));
         resizeToMax("image_overlay");
         $("#overlay").show();
@@ -161,6 +164,9 @@
     });
 
     $('#image_overlay, #overlay, #overlay_content').click(function () {
+
+        if( screen.width <= 480 ) return;
+        
         $('#image_overlay').attr('src', '');
         $('#overlay').hide();
         $('#overlay_content').hide();

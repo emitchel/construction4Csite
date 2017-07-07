@@ -72,7 +72,7 @@ function resizeToMax(id) {
         img.style.width = "80%";
         img.style.height = "auto";
     } else {
-        img.style.height = window.innerHeight;
+        img.style.height = window.screen.height;
         img.style.width = "auto";
     }
 }
