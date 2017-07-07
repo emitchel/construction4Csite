@@ -25,6 +25,7 @@
 //= require lightbox.js
 //= require master-custom.js
 //= require jquery.cubeportfolio.min.js
+//= require jquery.lazy.min.js
 
 (function ($, window, document, undefined) {
     'use strict';

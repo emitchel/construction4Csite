@@ -52,7 +52,7 @@
           <% end %>
 
           <div class="gallery_product col-md-4">
-              <img src=<%= "/assets/#{picture}" %> class='img-responsive gallery'>
+              <img data-src=<%= "/assets/#{picture}" %> class='img-responsive gallery lazy'>
           </div>
 
           <% if count%3==0 %>

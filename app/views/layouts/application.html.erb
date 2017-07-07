@@ -166,10 +166,17 @@
     $('#image_overlay, #overlay, #overlay_content').click(function () {
 
         if( screen.width <= 480 ) return;
-        
+
         $('#image_overlay').attr('src', '');
         $('#overlay').hide();
         $('#overlay_content').hide();
+    });
+
+    $('.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true
     });
 </script>
 
