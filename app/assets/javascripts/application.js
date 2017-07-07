@@ -64,17 +64,15 @@
 
 })(jQuery, window, document);
 
-function resizeToMax(id){
+function resizeToMax(id) {
     myImage = new Image()
     var img = document.getElementById(id);
     myImage.src = img.src;
-    if(myImage.width > myImage.height){
+    if (myImage.width > myImage.height) {
         img.style.width = "80%";
         img.style.height = "auto";
-        $('#overlay_content').css({'top':'100px'})
     } else {
         img.style.height = window.innerHeight;
         img.style.width = "auto";
-        $('#overlay_content').css({'top':'0px'})
     }
 }

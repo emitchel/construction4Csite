@@ -950,14 +950,14 @@ Dropdown css
     -ms-box-shadow: none;
     box-shadow: none;
     min-width: 190px;
-    background-color: #333;
+    background-color: #fdfdfd;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px;
     padding: 0px;
     min-width: 210px;
-    border-color: #333;
+    border-color: #989898;
 }
 
 .dropdown-menu > li > a {
@@ -967,7 +967,7 @@ Dropdown css
     font-weight: 300;
     text-transform: capitalize;
     font-family: "Open Sans", sans-serif;
-    color: #fff;
+    color: #000000;
 }
 
 .dropdown-menu > li > a:hover {
