@@ -3,7 +3,7 @@ module LeadEmailer
   include SendGrid
 
   LEAD_EMAIL_FROM = '4C_leads@4cconstruction.com'.freeze
-  LEAD_EMAIL_TO = 'elliot.r.mitchell@gmail.com'.freeze
+  LEAD_EMAIL_TO = '4constructionllc@gmail.com'.freeze
 
   def self.email_lead(lead)
     begin

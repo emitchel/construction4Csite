@@ -35,7 +35,7 @@
     <div class="row">
       <div class="col-sm-6">
         <span class="readable-small-text"><i class="ion-android-call"></i> <%= Constants::PHONE_NUMBER %></span>
-        <span class="readable-small-text"><i class="ion-ios-email"></i> <%= Constants::EMAIL %></span>
+        <span class="readable-small-text"><i class="ion-ios-email"></i> <a href="<%= url_for :controller => 'pages', :action => 'contact' %>"><%= Constants::EMAIL %></a></span>
       </div>
       <div class="col-sm-6">
         <ul class="list-inline text-right">
