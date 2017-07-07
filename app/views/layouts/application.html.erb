@@ -24,6 +24,10 @@
 </head>
 
 <body>
+<div id="overlay"></div>
+<div id="overlay_content">
+  <img id="image_overlay" src="" alt="" />
+</div>
 <div id="preloader"></div>
 <!--top bar-->
 <div class="top-bar">
@@ -63,7 +67,8 @@
           <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home Building</a></li>
+            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home
+              Building</a></li>
             <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>">Home
               Remodeling</a></li>
             <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>">Decks &
@@ -94,7 +99,8 @@
       <div class="col-md-6 margin-btm-30">
         <h3>Our Services</h3>
         <ul class="list-unstyled">
-          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home Building</a></li>
+          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home
+            Building</a></li>
           <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>">Home
             Remodeling</a></li>
           <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>">Decks &
@@ -144,5 +150,22 @@
     </div>
   </div>
 </div>
+
+<script>
+    $('.gallery').on('click', function () {
+        $("#image_overlay").attr("src", $(this).prop('src'));
+        resizeToMax("image_overlay");
+        $("#overlay").show();
+        $("#overlay_content").show();
+
+    });
+
+    $('#image_overlay, #overlay, #overlay_content').click(function () {
+        $('#image_overlay').attr('src', '');
+        $('#overlay').hide();
+        $('#overlay_content').hide();
+    });
+</script>
+
 </body>
 </html>

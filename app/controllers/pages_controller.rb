@@ -27,36 +27,28 @@ class PagesController < ApplicationController
     @subtitle = service[:subtitle]
     @description = service[:description]
     @background_picture = service[:background_picture]
-    @picture1 = service[:picture1]
-    @picture2 = service[:picture2]
-    @picture3 = service[:picture3]
+    @pictures = service[:pictures]
   end
 
   private
 
   SUPPORTED_SERVICES = %w[renovation carpentry homes].freeze
 
-  RENOVATION_SERVICE = { title: 'Renovation Service',
+  RENOVATION_SERVICE = {title: 'Renovation Service',
                         subtitle: 'House Renovation',
                         description: 'Bathrooms, kitchens, bedrooms, entire basements, renovations are a great route for adding that personal touch',
                         background_picture: '/assets/bath1.jpg',
-                        picture1: '/assets/reno1.jpg',
-                        picture2: '/assets/reno2.jpg',
-                        picture3: '/assets/familytokitchen.jpg' }.freeze
-  CARPENTRY_SERVICE = { title: 'Carpentry Service',
+                        pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze
+  CARPENTRY_SERVICE = {title: 'Carpentry Service',
                        subtitle: 'Decks & Carpentry',
                        description: 'While we do specialize in customized decks, any type of carpentry isn\'t out of the question',
                        background_picture: '/assets/15.jpg',
-                       picture1: '/assets/5.jpg',
-                       picture2: '/assets/goodeck.jpg',
-                       picture3: '/assets/familyroom3.jpg' }.freeze
-  HOME_BUILDING_SERVICE = { title: 'Home Building Service',
+                       pictures: ['5.jpg', 'goodeck.jpg', 'familyroom3.jpg']}.freeze
+  HOME_BUILDING_SERVICE = {title: 'Home Building Service',
                            subtitle: 'Custom Home Building',
                            description: 'As far as custom home building we do everything. Custom kitchens, bathrooms, living area, bedrooms. From floor to ceiling, whatever you need done, we can do it.',
                            background_picture: '/assets/blueprint1.jpg',
-                           picture1: '/assets/Front.jpg',
-                           picture2: '/assets/3.jpg',
-                           picture3: '/assets/basement1.jpg' }.freeze
+                           pictures: %w[Front.jpg 3.jpg basement1.jpg 4.jpg 5.jpg 6.jpg 7.jpg 9.jpg b1.jpg b1p2.jpg b1p3.jpg b11.jpg b12.jpg bath1.jpg by1.jpg by2.jpg e.jpg e1.jpg e2.jpg f1.jpg f2.jpg familyroom1.jpg familyroom3.jpg familytokitchen.jpg fr2.jpg Front.jpg frontside1.jpg frontside2.jpg g2.jpg g3.jpg k2.jpg k5.jpg k6.jpg kitchen3.jpg kitchen4.jpg l1.jpg l2.jpg l3.jpg livingtoentry.jpg m1.jpg m2.jpg m3.jpg mb1.jpg mb2.jpg mb3.jpg mb4.jpg mbd1.jpg mbd2.jpg mbd3.jpg r1.jpg r2.jpg reno1.jpg reno2.jpg]}.freeze
 
   def check_service
     raise ActionController::RoutingError.new('Not Found') unless SUPPORTED_SERVICES.include?(service)

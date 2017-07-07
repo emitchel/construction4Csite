@@ -18,7 +18,8 @@
       <div class="sidebar-widget">
         <ul class="list-unstyled side-nav">
           <li class=<%= @custom_homes_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>>Custom Home Building</a></li>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>>Custom Home
+              Building</a></li>
           <li class=<%= @house_reno_active %>>
             <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'renovation' %>>House
               renovation</a></li>
@@ -30,28 +31,35 @@
     </div><!--col-->
     <div class="col-md-9">
       <div class="row">
-        <div class="col-sm-7">
-          <h3><%= @subtitle %></h3>
-          <div class="border-width"></div>
-          <p>
-            <%= @description %>
-          </p>
-        </div>
-        <div class="col-sm-5">
-          <div class="service-box">
-            <div class="service-thumb">
-              <img src=<%= @picture1 %> alt="" class="img-responsive">
-              <div class="space20"></div>
-              <img src=<%= @picture2 %> alt="" class="img-responsive">
-              <div class="space20"></div>
-              <img src=<%= @picture3 %> alt="" class="img-responsive">
-            </div>
-          </div>
-        </div>
+        <h3><%= @subtitle %></h3>
+        <div class="border-width"></div>
+        <p>
+          <%= @description %>
+        </p>
       </div>
 
       <div class="space20"></div>
     </div>
+
   </div><!--row-->
+  <% if @pictures.size >= 0 %>
+      <% count = 1 %>
+
+      <% @pictures.each do |picture| %>
+
+          <% if count%3==0 %>
+              <div class="row">
+          <% end %>
+
+          <div class="gallery_product col-md-4">
+              <img src=<%= "/assets/#{picture}" %> class='img-responsive gallery'>
+          </div>
+
+          <% if count%3==0 %>
+              </div>
+          <% end %>
+          <% count += 1 %>
+      <% end %>
+  <% end %>
 
 </div>
