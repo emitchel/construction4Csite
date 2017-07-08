@@ -20,7 +20,7 @@ class PagesController < ApplicationController
 
   def services
     service = service_content
-    @house_reno_active = active?('renovation')
+    @house_reno_active = active?('remodeling')
     @carpentry_active = active?('carpentry')
     @custom_homes_active = active?('homes')
     @service_title = service[:title]
@@ -32,11 +32,13 @@ class PagesController < ApplicationController
 
   private
 
-  SUPPORTED_SERVICES = %w[renovation carpentry homes].freeze
+  SUPPORTED_SERVICES = %w[remodeling carpentry homes].freeze
 
-  RENOVATION_SERVICE = {title: 'Renovation Service',
-                        subtitle: 'House Renovation',
-                        description: 'Bathrooms, kitchens, bedrooms, entire basements, renovations are a great route for adding that personal touch',
+  REMODELING_SERVICE = {title: 'Remodeling Service',
+                        subtitle: 'Home Remodeling',
+                        description: 'When you start a home remodeling activity you want something better, of higher quality and everything must fit your taste completely. Are you a homeowner looking for a general contractor for your remodeling project? Do you need a reliable, on time contractor that can commit to a short-term or long-term project? Then look no further. We here at 4C want to make sure that your remodeling will not only be what you want but also fit your budget.' \
+                        '<p>With over 30 years of professional experience in all phases of the construction industry including flooring, counter tops, bath rooms, decks, inside and outside remodeling, wall modifications, textures, painting, electrical, plumbing, lighting, environmental audit, rehab, tenant improvements, general property maintenance, remediation work, insurance claims, vintage restorations, additions, out buildings, and gazebos.</p>' \
+                        '<p>Our mission is to provide you with a complete solution to all your construction needs. We will assist you from start to finish of your project. we’ll help you with the planning stage, your budget parameters, the time frame, permits if needed, and review the estimate with you to ensure everything as you need it prior to the start of the project.</p>',
                         background_picture: '/assets/bath1.jpg',
                         pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze
   CARPENTRY_SERVICE = {title: 'Carpentry Service',
@@ -46,7 +48,7 @@ class PagesController < ApplicationController
                        pictures: ['5.jpg', 'goodeck.jpg', 'familyroom3.jpg']}.freeze
   HOME_BUILDING_SERVICE = {title: 'Home Building Service',
                            subtitle: 'Custom Home Building',
-                           description: 'As far as custom home building we do everything. Custom kitchens, bathrooms, living area, bedrooms. From floor to ceiling, whatever you need done, we can do it.',
+                           description: 'Are you ready to have your expectations exceeded? Are you ready to be the envy of the neighborhood? Are you ready to have a pleasant contracting experience that will add value to your home? 4C is committed to excellence in design and execution of all deck and carpentry design projects. Armed with innovative design capabilities, building technique and the tools and equipment to get the job done. 4C is always “thinking outside the box”.  Always pushing the envelope of quality, elegant simplicity and well balanced design for the discriminating client.',
                            background_picture: '/assets/blueprint1.jpg',
                            pictures: %w[Front.jpg 3.jpg basement1.jpg 4.jpg 5.jpg 6.jpg 7.jpg 9.jpg b1.jpg b1p2.jpg b1p3.jpg b11.jpg b12.jpg bath1.jpg by1.jpg by2.jpg e.jpg e1.jpg e2.jpg f1.jpg f2.jpg familyroom1.jpg familyroom3.jpg familytokitchen.jpg fr2.jpg Front.jpg frontside1.jpg frontside2.jpg g2.jpg g3.jpg k2.jpg k5.jpg k6.jpg kitchen3.jpg kitchen4.jpg l1.jpg l2.jpg l3.jpg livingtoentry.jpg m1.jpg m2.jpg m3.jpg mb1.jpg mb2.jpg mb3.jpg mb4.jpg mbd1.jpg mbd2.jpg mbd3.jpg r1.jpg r2.jpg reno1.jpg reno2.jpg]}.freeze
 
@@ -67,8 +69,8 @@ class PagesController < ApplicationController
   end
 
   def service_content
-    if service == 'renovation'
-      RENOVATION_SERVICE
+    if service == 'remodeling'
+      REMODELING_SERVICE
     elsif service == 'carpentry'
       CARPENTRY_SERVICE
     elsif service == 'homes'

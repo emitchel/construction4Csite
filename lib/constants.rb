@@ -7,7 +7,7 @@ module Constants
 
     ADDRESS = '7901 S 22nd Ave. Bellevue, Nebraska, NE 68147'
     ADDRESS_FIRST_LINE = '7901 S 22nd Ave.'
-    ADDRESS_SECOND_LINE = 'Columbia, 302012'
+    ADDRESS_SECOND_LINE = 'Bellevue, Nebraska, NE 68147'
 
     TITLE = '4C Construction'
 
