@@ -43,23 +43,30 @@
 
   </div><!--row-->
   <% if @pictures.size >= 0 %>
-      <% count = 1 %>
-
-      <% @pictures.each do |picture| %>
-
-          <% if count%3==0 %>
-              <div class="row">
-          <% end %>
-
-          <div class="gallery_product col-md-4">
-              <img data-src=<%= "/assets/#{picture}" %> class='img-responsive gallery lazy'>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <% @pictures.each do |picture| %>
+                  <div class="swiper-slide">
+                    <img src=<%= "/assets/#{picture}" %> class='img-responsive gallery image-slide'>
+                  </div>
+              <% end %>
+            </div>
           </div>
-
-          <% if count%3==0 %>
-              </div>
-          <% end %>
-          <% count += 1 %>
-      <% end %>
+        </div>
+      </div>
   <% end %>
-
 </div>
+
+<div class="space40"></div>
+<script>
+    var mySwiper = $('.swiper-container').swiper({
+
+        mode: 'horizontal',
+        loop: true,
+        lazyLoading: true
+
+    });
+
+</script>
