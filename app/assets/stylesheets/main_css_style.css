@@ -861,6 +861,7 @@ Top bar style
 
     z-index: 501 !important;
 }
+
 .navbar.sticky {
     z-index: 501 !important;
     width: 100%;
@@ -1947,3 +1948,11 @@ div.no-margin {
     overflow: hidden;
     z-index: 800;
 }
+
+.image-slide {
+    margin: auto;
+    height: auto;
+    width: auto;
+}
+
+

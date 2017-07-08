@@ -30,7 +30,7 @@
       </div>
     </div><!--col-->
     <div class="col-md-9">
-      <div class="row" style="padding-left: 10px">
+      <div class="row" style="padding-left: 15px">
         <h3><%= @subtitle %></h3>
         <div class="border-width"></div>
         <p>
@@ -43,23 +43,63 @@
 
   </div><!--row-->
   <% if @pictures.size >= 0 %>
-      <% count = 1 %>
 
-      <% @pictures.each do |picture| %>
+      <div class="space20"></div>
+      <div class="row">
 
-          <% if count%3==0 %>
-              <div class="row">
-          <% end %>
+        <div class="col-md-9 col-md-offset-3">
+          <h3>Pictures</h3>
+          <%= @pictures.size %> <i class="ion-ios-photos-outline"></i>
+          <div class="border-width"></div>
+        </div>
+      </div>
+      <div class="row">
 
-          <div class="gallery_product col-md-4">
-              <img data-src=<%= "/assets/#{picture}" %> class='img-responsive gallery lazy'>
+        <div class="col-md-9 col-md-offset-3">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-skin prev"><i class="ion-ios-arrow-left"></i> Prev</button>
+            <button type="button" class="btn btn-skin next">Next <i class="ion-ios-arrow-right"></i></button>
           </div>
+          <div class="space10"></div>
+        </div>
+      </div>
+      <div class="row">
 
-          <% if count%3==0 %>
-              </div>
-          <% end %>
-          <% count += 1 %>
-      <% end %>
+        <div class="col-md-9 col-md-offset-3">
+          <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+              <% @pictures.each do |picture| %>
+                  <div class="swiper-slide">
+                    <img src=<%= "/assets/#{picture}" %> class='img-responsive image-slide'>
+                  </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
   <% end %>
-
 </div>
+
+<div class="space40"></div>
+<script>
+
+    var swiper = new Swiper('.swiper1', {
+        mode: 'horizontal',
+        loop: true,
+        lazyLoading: true,
+        preventClicks: true,
+        grabCursor: true
+    });
+
+
+    $('.prev').click(function (e) {
+        e.preventDefault()
+        swiper.swipePrev()
+    })
+
+    $('.next').click(function (e) {
+        e.preventDefault()
+        swiper.swipeNext()
+    })
+
+</script>
