@@ -43,12 +43,12 @@ class PagesController < ApplicationController
                         pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze
   CARPENTRY_SERVICE = {title: 'Carpentry Service',
                        subtitle: 'Decks & Carpentry',
-                       description: 'While we do specialize in customized decks, any type of carpentry isn\'t out of the question',
+                       description: 'Are you ready to have your expectations exceeded? Are you ready to be the envy of the neighborhood? Are you ready to have a pleasant contracting experience that will add value to your home? 4C is committed to excellence in design and execution of all deck and carpentry design projects. Armed with innovative design capabilities, building technique and the tools and equipment to get the job done. 4C is always “thinking outside the box”.  Always pushing the envelope of quality, elegant simplicity and well balanced design for the discriminating client.',
                        background_picture: '/assets/15.jpg',
                        pictures: ['5.jpg', 'goodeck.jpg', 'familyroom3.jpg']}.freeze
   HOME_BUILDING_SERVICE = {title: 'Home Building Service',
                            subtitle: 'Custom Home Building',
-                           description: 'Are you ready to have your expectations exceeded? Are you ready to be the envy of the neighborhood? Are you ready to have a pleasant contracting experience that will add value to your home? 4C is committed to excellence in design and execution of all deck and carpentry design projects. Armed with innovative design capabilities, building technique and the tools and equipment to get the job done. 4C is always “thinking outside the box”.  Always pushing the envelope of quality, elegant simplicity and well balanced design for the discriminating client.',
+                           description: 'We design our homes for livability. Distinctive exteriors, gracious interior spaces, and outdoor living areas all reflect the way that families and individuals live today. Our homes are built with superior-quality materials by the industry’s top craftsmen. Our on-site building team oversees each home during the construction process from the time the concrete is poured to the final walkthrough to ensure your new home meets your needs.',
                            background_picture: '/assets/blueprint1.jpg',
                            pictures: %w[Front.jpg 3.jpg basement1.jpg 4.jpg 5.jpg 6.jpg 7.jpg 9.jpg b1.jpg b1p2.jpg b1p3.jpg b11.jpg b12.jpg bath1.jpg by1.jpg by2.jpg e.jpg e1.jpg e2.jpg f1.jpg f2.jpg familyroom1.jpg familyroom3.jpg familytokitchen.jpg fr2.jpg Front.jpg frontside1.jpg frontside2.jpg g2.jpg g3.jpg k2.jpg k5.jpg k6.jpg kitchen3.jpg kitchen4.jpg l1.jpg l2.jpg l3.jpg livingtoentry.jpg m1.jpg m2.jpg m3.jpg mb1.jpg mb2.jpg mb3.jpg mb4.jpg mbd1.jpg mbd2.jpg mbd3.jpg r1.jpg r2.jpg reno1.jpg reno2.jpg]}.freeze
 
