@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4caef9f2-9518-471a-8187-7b1aca3419ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/swiper.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/swiper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/swiper.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/swiper.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/services.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/services.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/about.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/about.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -97,21 +93,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_css_style.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main_css_style.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="707">
-                  <caret line="1955" column="1" lean-forward="true" selection-start-line="1955" selection-start-column="1" selection-end-line="1955" selection-end-column="1" />
+                <state relative-caret-position="197">
+                  <caret line="1921" column="1" lean-forward="true" selection-start-line="1921" selection-start-column="1" selection-end-line="1921" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="about.html.erb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="about.html.erb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+                <state relative-caret-position="78">
+                  <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -173,6 +169,7 @@
       <replace>'</replace>
       <replace>'homes'</replace>
       <replace>'remodeling'</replace>
+      <replace>Nebraska Realty</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -203,7 +200,6 @@
         <option value="$PROJECT_DIR$/lib/lead_emailer.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/lib/constants.rb" />
-        <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$USER_HOME$/Desktop/Temp Location/image-gallery.slider.standard/standard.html" />
@@ -214,6 +210,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/swiper.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/swiper.css" />
         <option value="$PROJECT_DIR$/app/views/pages/services.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
       </list>
     </option>
   </component>
@@ -625,7 +622,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77766000" />
+    <option name="totallyTimeSpent" value="78076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1000" extended-state="6" />
@@ -977,14 +974,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jssor.slider.min.js" />
-    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1019,14 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="1955" column="1" lean-forward="true" selection-start-line="1955" selection-start-column="1" selection-end-line="1955" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/swiper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6586">
@@ -1051,6 +1032,22 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
             <marker date="1499695092000" expanded="true" signature="1630:2858" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1921" column="1" lean-forward="true" selection-start-line="1921" selection-start-column="1" selection-end-line="1921" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
