@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4caef9f2-9518-471a-8187-7b1aca3419ca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/swiper.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/swiper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/swiper.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/swiper.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/services.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/services.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -27,7 +31,7 @@
           <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="677">
+                <state relative-caret-position="809">
                   <caret line="173" column="7" lean-forward="false" selection-start-line="173" selection-start-column="7" selection-end-line="173" selection-end-column="7" />
                   <folding />
                 </state>
@@ -37,12 +41,22 @@
           <file leaf-file-name="services.html.erb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/pages/services.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="536">
-                  <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+                <state relative-caret-position="721">
+                  <caret line="93" column="7" lean-forward="false" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-                    <marker date="1499548366000" expanded="true" signature="1630:2858" ph="..." />
+                    <marker date="1499695092000" expanded="true" signature="1630:2858" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="swiper.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/swiper.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -50,11 +64,9 @@
           <file leaf-file-name="swiper.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/swiper.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="22248" lean-forward="false" selection-start-line="12" selection-start-column="22248" selection-end-line="12" selection-end-column="22248" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state relative-caret-position="6586">
+                  <caret line="5353" column="39" lean-forward="false" selection-start-line="5353" selection-start-column="39" selection-end-line="5353" selection-end-column="39" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -85,11 +97,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_css_style.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main_css_style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="381">
-                  <caret line="1935" column="17" lean-forward="false" selection-start-line="1935" selection-start-column="17" selection-end-line="1935" selection-end-column="17" />
+                <state relative-caret-position="707">
+                  <caret line="1955" column="1" lean-forward="true" selection-start-line="1955" selection-start-column="1" selection-end-line="1955" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -105,7 +117,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="production.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="284">
@@ -121,16 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>assets</find>
-      <find>service-box</find>
-      <find>col-md-6col</find>
-      <find>fonts</find>
-      <find>%</find>
-      <find>jpy</find>
-      <find>col-md-6</find>
-      <find>applica</find>
-      <find>z-index</find>
-      <find>custom home build</find>
       <find>z-index:</find>
       <find>%w</find>
       <find>elliot.r.mit</find>
@@ -147,9 +149,19 @@
       <find>.la</find>
       <find>.lazy</find>
       <find>.lazy(</find>
-      <find>.lazy({</find>
       <find>gallery_product</find>
+      <find>.lazy({</find>
+      <find>s</find>
+      <find>swiper-</find>
+      <find>swiper-wrppa</find>
+      <find>swiper-wrpp</find>
+      <find>swiper-wrp</find>
+      <find>swiper-wr</find>
+      <find>swiper-wrap</find>
+      <find>swiper-wrapp</find>
+      <find>swiper-wrapper</find>
       <find>.compile</find>
+      <find>swiper</find>
       <find>auto</find>
     </findStrings>
     <replaceStrings>
@@ -197,9 +209,10 @@
         <option value="$USER_HOME$/Desktop/Temp Location/image-gallery.slider.standard/standard.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/swiper.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/swiper.css" />
         <option value="$PROJECT_DIR$/app/views/pages/services.html.erb" />
       </list>
     </option>
@@ -398,7 +411,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="production.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/production.rb&#10;about&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/about.html.erb&#10;application.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/application.css&#10;index&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;pages&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;contact&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;application.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;constants&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/lib/constants.rb&#10;serv&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/services.html.erb&#10;application.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/application.js&#10;main_&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;about.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/about.html.erb&#10;index.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;services&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/services.html.erb&#10;application.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/application.rb&#10;routes&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;manifest&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/config/manifest.js&#10;config&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/config.rb&#10;conta&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;404&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/public/404.html&#10;main&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;CONTACT.JS&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;contact.html.erb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;test&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/test.rb&#10;gemfile&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/Gemfile&#10;environment.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environment.rb&#10;contact.h&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;contact.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;indexh&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;ROUTES&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;CONTA&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;rout&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pagescon&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;application&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;custom&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/custom.js&#10;routes.&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;mainstyle&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;mainstyles&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="swiper.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/swiper.css&#10;production.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/production.rb&#10;about&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/about.html.erb&#10;application.css&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/application.css&#10;index&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;pages&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;contact&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;application.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;constants&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/lib/constants.rb&#10;serv&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/services.html.erb&#10;application.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/application.js&#10;main_&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;about.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/about.html.erb&#10;index.html&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;services&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/services.html.erb&#10;application.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/application.rb&#10;routes&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;manifest&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/config/manifest.js&#10;config&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/config.rb&#10;conta&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/contact.html.erb&#10;404&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/public/404.html&#10;main&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;CONTACT.JS&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;contact.html.erb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;test&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environments/test.rb&#10;gemfile&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/Gemfile&#10;environment.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/environment.rb&#10;contact.h&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;contact.js&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/contact.js&#10;indexh&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/pages/index.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;ROUTES&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;CONTA&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/template_files/html/contact.html&#10;rout&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;pagescon&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/controllers/pages_controller.rb&#10;application&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/views/layouts/application.html.erb&#10;custom&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/javascripts/custom.js&#10;routes.&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/config/routes.rb&#10;mainstyle&#9;FILE&#9;file:///Users/elliotmitchell/apps/construction4Csite/app/assets/stylesheets/main_css_style.css&#10;mainstyles&#9;null&#9;null" />
     <property name="editorconfig.notification" value="'utf-8'" />
   </component>
   <component name="RecentsManager">
@@ -612,7 +625,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75498000" />
+    <option name="totallyTimeSpent" value="77766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1000" extended-state="6" />
@@ -687,13 +700,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dzsparallaxer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/master-custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -971,6 +977,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jssor.slider.min.js" />
+    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -989,55 +1011,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="1935" column="17" lean-forward="false" selection-start-line="1935" selection-start-column="17" selection-end-line="1935" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
+        <state relative-caret-position="809">
           <caret line="173" column="7" lean-forward="false" selection-start-line="173" selection-start-column="7" selection-end-line="173" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main_css_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="707">
+          <caret line="1955" column="1" lean-forward="true" selection-start-line="1955" selection-start-column="1" selection-end-line="1955" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/swiper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22248" lean-forward="false" selection-start-line="12" selection-start-column="22248" selection-end-line="12" selection-end-column="22248" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="6586">
+          <caret line="5353" column="39" lean-forward="false" selection-start-line="5353" selection-start-column="39" selection-end-line="5353" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/services.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+        <state relative-caret-position="721">
+          <caret line="93" column="7" lean-forward="false" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <marker date="1499548366000" expanded="true" signature="1630:2858" ph="..." />
+            <marker date="1499695092000" expanded="true" signature="1630:2858" ph="..." />
           </folding>
         </state>
       </provider>

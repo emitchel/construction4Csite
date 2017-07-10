@@ -86,20 +86,11 @@
     var swiper = new Swiper('.swiper1', {
         mode: 'horizontal',
         loop: true,
-        lazyLoading: true,
+        lazyLoading: false,
         preventClicks: true,
-        grabCursor: true
+        grabCursor: true,
+        nextButton: '.next',
+        prevButton: '.prev'
     });
-
-
-    $('.prev').click(function (e) {
-        e.preventDefault()
-        swiper.swipePrev()
-    })
-
-    $('.next').click(function (e) {
-        e.preventDefault()
-        swiper.swipeNext()
-    })
 
 </script>
