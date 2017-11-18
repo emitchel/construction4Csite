@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'readmore-js' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData readmore-js
+8 silly fetchNamedPackageData readmore-js
+9 silly mapToRegistry name readmore-js
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://npm.tools.spreetail.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'readmore-js',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'readmore-js',
+12 silly mapToRegistry   name: 'readmore-js',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://npm.tools.spreetail.org/readmore-js
+14 verbose request uri http://npm.tools.spreetail.org/readmore-js
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:39:53 AM
+17 verbose request id 9ff4d82af00a3e7b
+18 http request GET http://npm.tools.spreetail.org/readmore-js
+19 http 200 http://npm.tools.spreetail.org/readmore-js
+20 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us"/><script type="text/javascript">url="http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+21 error registry error parsing json
+22 verbose headers { server: 'nginx',
+22 verbose headers   date: 'Sat, 18 Nov 2017 16:39:52 GMT',
+22 verbose headers   'content-type': 'text/html; charset=utf-8',
+22 verbose headers   'transfer-encoding': 'chunked',
+22 verbose headers   connection: 'close',
+22 verbose headers   expires: 'Sat, 18 Nov 2017 16:49:52 GMT',
+22 verbose headers   'cache-control': 'max-age=600' }
+23 silly get cb [ 200,
+23 silly get   { server: 'nginx',
+23 silly get     date: 'Sat, 18 Nov 2017 16:39:52 GMT',
+23 silly get     'content-type': 'text/html; charset=utf-8',
+23 silly get     'transfer-encoding': 'chunked',
+23 silly get     connection: 'close',
+23 silly get     expires: 'Sat, 18 Nov 2017 16:49:52 GMT',
+23 silly get     'cache-control': 'max-age=600' } ]
+24 silly fetchPackageMetaData SyntaxError: Unexpected token < in JSON at position 0
+24 silly fetchPackageMetaData <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us"/><script type="text/javascript">url="http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+24 silly fetchPackageMetaData     at Object.parse (native)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:237:23)
+24 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+24 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+24 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+24 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+24 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+24 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+24 silly fetchPackageMetaData  error for readmore-js SyntaxError: Unexpected token < in JSON at position 0
+24 silly fetchPackageMetaData <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us"/><script type="text/javascript">url="http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+24 silly fetchPackageMetaData     at Object.parse (native)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:237:23)
+24 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+24 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+24 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+24 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+24 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+24 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack SyntaxError: Unexpected token < in JSON at position 0
+29 verbose stack <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us"/><script type="text/javascript">url="http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+29 verbose stack     at Object.parse (native)
+29 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:237:23)
+29 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+29 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+29 verbose stack     at emitTwo (events.js:106:13)
+29 verbose stack     at Request.emit (events.js:191:7)
+29 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+29 verbose stack     at emitOne (events.js:96:13)
+29 verbose stack     at Request.emit (events.js:188:7)
+29 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+30 verbose cwd c:\Sites\construction4Csite
+31 error Windows_NT 10.0.15063
+32 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "readmore-js"
+33 error node v6.11.1
+34 error npm  v3.10.10
+35 error Unexpected token < in JSON at position 0
+35 error <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us"/><script type="text/javascript">url="http://finder.cox.net/main?ParticipantID=96e687opkbv4scrood8k84drs6gw5duf&FailedURI=http%3A%2F%2Fnpm.tools.spreetail.org%2Freadmore-js&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&Referer=install+readmore-js&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+36 error If you need help, you may report this error at:
+36 error     <https://github.com/npm/npm/issues>
+37 verbose exit [ 1, true ]
