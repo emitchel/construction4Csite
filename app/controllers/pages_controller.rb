@@ -55,8 +55,7 @@ class PagesController < ApplicationController
                            b11.jpg b12.jpg bath1.jpg by1.jpg by2.jpg e.jpg e1.jpg e2.jpg f1.jpg f2.jpg familyroom1.jpg
                            familyroom3.jpg familytokitchen.jpg fr2.jpg Front.jpg frontside1.jpg frontside2.jpg g2.jpg g3.jpg
                            k2.jpg k5.jpg k6.jpg kitchen3.jpg kitchen4.jpg l1.jpg l2.jpg l3.jpg livingtoentry.jpg m1.jpg m2.jpg
-                           m3.jpg mb1.jpg mb2.jpg mb3.jpg mb4.jpg mbd1.jpg mbd2.jpg mbd3.jpg r1.jpg r2.jpg reno1.jpg reno2.jpg
-                           17.jpg 18.jpg 19.jpg 20.jpg 21.jpg 22.jpg 23.jpg 24.jpg 25.jpg 26.jpg 27.jpg 28.jpg 29.jpg 30.jpg]}.freeze
+                           m3.jpg mb1.jpg mb2.jpg mb3.jpg mb4.jpg mbd1.jpg mbd2.jpg mbd3.jpg r1.jpg r2.jpg reno1.jpg reno2.jpg]}.freeze
 
   def check_service
     raise ActionController::RoutingError.new('Not Found') unless SUPPORTED_SERVICES.include?(service)
