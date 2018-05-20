@@ -8,8 +8,9 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: super_user
-  password: elliot
+  #will need the below if working on windows... would probably need to create said account
+  #username: super_user
+  #password: elliot
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
