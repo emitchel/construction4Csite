@@ -29,6 +29,7 @@ module LeadEmailer
     value += '<p>New Lead for 4C Construction </p>'
     value += "<p>Name: #{lead.name} </p>"
     value += "<p>Email: #{lead.email} </p>"
+    value += "<p>Phone: #{lead.phone} </p>"
     value += "<p>How they found out about us: #{lead.source} </p>"
     value += "<p>Message: #{lead.message} </p>"
     value += "<p>Lead created at: #{lead.created_at} </p>"

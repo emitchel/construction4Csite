@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def contact_us
-    lead = Lead.new(name: params[:name], email: params[:email], message: params[:message], source: params[:how])
+    lead = Lead.new(name: params[:name], phone: params[:phone], email: params[:email], message: params[:message], source: params[:how])
     lead.save
     render json: {success: LeadEmailer.email_lead(lead)}
   end
@@ -37,7 +37,6 @@ class PagesController < ApplicationController
   REMODELING_SERVICE = {title: 'Remodeling Service',
                         subtitle: 'Home Remodeling',
                         description: 'When you start a home remodeling activity you want something better, of higher quality and everything must fit your taste completely. Are you a homeowner looking for a general contractor for your remodeling project? Do you need a reliable, on time contractor that can commit to a short-term or long-term project? Then look no further. We here at 4C want to make sure that your remodeling will not only be what you want but also fit your budget.' \
-                        '<p>With over 30 years of professional experience in all phases of the construction industry including flooring, counter tops, bath rooms, decks, inside and outside remodeling, wall modifications, textures, painting, electrical, plumbing, lighting, environmental audit, rehab, tenant improvements, general property maintenance, remediation work, insurance claims, vintage restorations, additions, out buildings, and gazebos.</p>' \
                         '<p>Our mission is to provide you with a complete solution to all your construction needs. We will assist you from start to finish of your project. we’ll help you with the planning stage, your budget parameters, the time frame, permits if needed, and review the estimate with you to ensure everything as you need it prior to the start of the project.</p>',
                         background_picture: '/assets/bath1.jpg',
                         pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze

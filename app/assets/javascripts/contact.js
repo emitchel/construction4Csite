@@ -27,6 +27,7 @@ $('.b-contact').submit(function () {
     var $form = $(this);
     var $email = $form.find('input[name="email"]');
     var $name = $form.find('input[name="name"]');
+    var $phone = $form.find('input[name="phone"]');
     var $how = $form.find('input[name="how"]');
     var $message = $form.find('textarea[name="message"]');
     var $submit = $form.find('input[name="submit"]');
@@ -40,6 +41,7 @@ $('.b-contact').submit(function () {
         $email.attr('disabled', 'disabled');
         $name.attr('disabled', 'disabled');
         $how.attr('disabled', 'disabled');
+        $phone.attr('disabled', 'disabled');
         $message.attr('disabled', 'disabled');
         $submit.attr('disabled', 'disabled');
         $dataStatus.show().html(getAlertHtml("Loading..."));
@@ -48,6 +50,7 @@ $('.b-contact').submit(function () {
             email: elToSafeJson($email),
             name: elToSafeJson($name),
             how: elToSafeJson($how),
+            phone: elToSafeJson($phone),
             message: elToSafeJson($message)
         })
             .done(function (data) {
@@ -55,6 +58,7 @@ $('.b-contact').submit(function () {
                 $email.removeAttr('disabled');
                 $name.removeAttr('disabled');
                 $how.removeAttr('disabled');
+                $phone.removeAttr('disabled');
                 $message.removeAttr('disabled');
                 $submit.removeAttr('disabled');
                 if (data.success) {
