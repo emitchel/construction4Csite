@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_180,h_180/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_32,h_32/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_16,h_16/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#dd0300">
-  <link rel="image_src" href="/assets/4c-icon-color.png"/>
+  <link rel="image_src" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_25/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png"/>
   <meta name="description" content="We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in the Omaha Metro and some surrounding areas."/>
   <title><%= @title %></title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -66,7 +66,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=<%= root_path %>><%= cl_image_tag("4cnew.png") %>
+      <a class="navbar-brand" href=<%= root_path %>><%= cl_image_tag("logo/4C-Construction-Color_rimfci.png", :width => 400, :crop => "scale") %>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -98,7 +98,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 margin-btm-30">
-        <a href="<%= root_path %>"><img style="height:50px;" src="/assets/4c-horizontal-white-w-red.png" alt=""></a>
+        <a href="<%= root_path %>">
+          <%= cl_image_tag("logo/4C-Construction-White_woy86b", :height=>50, :crop=>"scale") %>
+        </a>
         <div class="space10"></div>
         <p>
           We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in
