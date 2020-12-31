@@ -23,6 +23,9 @@ class PagesController < ApplicationController
     @house_reno_active = active?('remodeling')
     @carpentry_active = active?('carpentry')
     @custom_homes_active = active?('homes')
+    @kitchen_active =active?('kitchen')
+    @bathroom =active?('bathroom')
+
     @service_title = service[:title]
     @subtitle = service[:subtitle]
     @description = service[:description]
@@ -32,7 +35,32 @@ class PagesController < ApplicationController
 
   private
 
-  SUPPORTED_SERVICES = %w[remodeling carpentry homes].freeze
+  SUPPORTED_SERVICES = %w[remodeling carpentry homes kitchen bathroom].freeze
+
+  BATHROOM_SERVICE = {title: 'Bathroom Remodeling',
+                        subtitle: 'Bathroom Remodeling',
+                        description: 'Bathroom remodeling can be a daunting experience.  Let our many years of experience work for
+                        you by keeping the stress out of your project.  4C Construction offers a total solution approach to
+                        the bathroom remodel process.  We will coordinate the entire process from design to
+                        completion.
+                        <p>Our award winning-bathroom design and construction team will work closely with you to
+                        personalize your bathroom remodeling project. We believe you deserve exceptional quality and
+                        value when you remodel your bathroom. We take great pride in delivering not only high-quality
+                        work, but a reliable experience. A newly designed bathroom can raise the value of your home,
+                        which is a huge benefit if you have plans to sell it during the next several years.</p>',
+                        background_picture: 'https://res.cloudinary.com/hddupyjhs/image/upload/v1609384908/remodeling/bath1_oubgy4.jpg',
+                        pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze
+
+  KITCHEN_SERVICE = {title: 'Kitchen Remodeling',
+                      subtitle: 'Kitchen Remodeling',
+                      description: 'The kitchen is the heart of the home. Because it is such a busy area and is used every day, it can
+                      also be a place that shows a lot of wear and tear. Why not make this a place that your family
+                      wants to gather? Our team at 4C have the design and installation experts to help you transform
+                      this busy area of your home into a beautiful, yet functional showplace! Every product and detail
+                      is carefully installed to the best standards. You will not find a better in value in kitchen
+                      renovation better than us. All workmanship is warrantied.',
+                      background_picture: 'https://res.cloudinary.com/hddupyjhs/image/upload/v1609384908/remodeling/bath1_oubgy4.jpg',
+                      pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze 
 
   REMODELING_SERVICE = {title: 'Remodeling Service',
                         subtitle: 'Home Remodeling',
@@ -79,6 +107,10 @@ class PagesController < ApplicationController
       CARPENTRY_SERVICE
     elsif service == 'homes'
       HOME_BUILDING_SERVICE
+    elsif service == 'bathroom'
+      BATHROOM_SERVICE
+    elsif service == 'kitchen'
+      KITCHEN_SERVICE
     end
   end
 end
