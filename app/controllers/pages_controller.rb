@@ -38,17 +38,17 @@ class PagesController < ApplicationController
                         subtitle: 'Home Remodeling',
                         description: 'When you start a home remodeling activity you want something better, of higher quality and everything must fit your taste completely. Are you a homeowner looking for a general contractor for your remodeling project? Do you need a reliable, on time contractor that can commit to a short-term or long-term project? Then look no further. We here at 4C want to make sure that your remodeling will not only be what you want but also fit your budget.' \
                         '<p>Our mission is to provide you with a complete solution to all your construction needs. We will assist you from start to finish of your project. we’ll help you with the planning stage, your budget parameters, the time frame, permits if needed, and review the estimate with you to ensure everything as you need it prior to the start of the project.</p>',
-                        background_picture: '/assets/bath1.jpg',
+                        background_picture: 'https://res.cloudinary.com/hddupyjhs/image/upload/v1609384908/remodeling/bath1_oubgy4.jpg',
                         pictures: ['reno1.jpg', 'familytokitchen.jpg', 'reno2.jpg']}.freeze
   CARPENTRY_SERVICE = {title: 'Carpentry Service',
                        subtitle: 'Decks & Carpentry',
                        description: 'Are you ready to have your expectations exceeded? Are you ready to be the envy of the neighborhood? Are you ready to have a pleasant contracting experience that will add value to your home? 4C is committed to excellence in design and execution of all deck and carpentry design projects. Armed with innovative design capabilities, building technique and the tools and equipment to get the job done. 4C is always “thinking outside the box”.  Always pushing the envelope of quality, elegant simplicity and well balanced design for the discriminating client.',
-                       background_picture: '/assets/15.jpg',
+                       background_picture: 'https://res.cloudinary.com/hddupyjhs/image/upload/v1609382900/carpentry/carpentry_backdrop.jpg',
                        pictures: ['5.jpg', 'goodeck.jpg', 'familyroom3.jpg']}.freeze
   HOME_BUILDING_SERVICE = {title: 'Home Building Service',
                            subtitle: 'Custom Home Building',
                            description: 'We design our homes for livability. Distinctive exteriors, gracious interior spaces, and outdoor living areas all reflect the way that families and individuals live today. Our homes are built with superior-quality materials by the industry’s top craftsmen. Our on-site building team oversees each home during the construction process from the time the concrete is poured to the final walkthrough to ensure your new home meets your needs.',
-                           background_picture: '/assets/blueprint1.jpg',
+                           background_picture: 'https://res.cloudinary.com/hddupyjhs/image/upload/v1609381826/homes/homes_backdrop.jpg',
                            pictures: %w[17.jpg 18.jpg 19.jpg 20.jpg 21.jpg 22.jpg 23.jpg 24.jpg 25.jpg 26.jpg 27.jpg 28.jpg 29.jpg 30.jpg
                            Front.jpg 3.jpg basement1.jpg 4.jpg 5.jpg 6.jpg 7.jpg 9.jpg b1.jpg b1p2.jpg b1p3.jpg 
                            b11.jpg b12.jpg bath1.jpg by1.jpg by2.jpg e.jpg e1.jpg e2.jpg f1.jpg f2.jpg familyroom1.jpg
