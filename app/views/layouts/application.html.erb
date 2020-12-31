@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_180,h_180/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_32,h_32/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_16,h_16/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_180,h_180/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_32,h_32/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_16,h_16/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#EE6D25">
-  <link rel="image_src" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_scale,w_25/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png"/>
+  <link rel="image_src" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_25/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png"/>
   <meta name="description" content="We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in the Omaha Metro and some surrounding areas."/>
   <title><%= @title %></title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -44,7 +44,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <span class="readable-small-text"><i class="ion-android-call"></i> <%= Constants::PHONE_NUMBER %></span>
+        <span class="readable-small-text"><i class="ion-android-call"></i><a href="tel:<%= Constants::PHONE_NUMBER_ANCHOR %>" ><%= Constants::PHONE_NUMBER %></a></span>
         <span class="readable-small-text"><i class="ion-ios-email"></i> <a href="<%= url_for :controller => 'pages', :action => 'contact' %>"><%= Constants::EMAIL %></a></span>
       </div>
       <div class="col-sm-6">
@@ -139,7 +139,7 @@
         <span class="bold_italic bottom_lbi">LICENSED - INSURED - BONDED</span>
       </div>
       <div class="col-sm-4 text-right">
-        <span>&copy; 2017. All Right Reserved. <%= Constants::TITLE %></span>
+        <span>&copy; 2021. All Right Reserved. <%= Constants::TITLE %></span>
       </div>
     </div>
   </div>

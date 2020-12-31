@@ -2,6 +2,7 @@ module Constants
     URL_FACEBOOK = 'https://www.facebook.com/4cconstructionllc/'
 
     PHONE_NUMBER = '(402) 616-1814'
+    PHONE_NUMBER_ANCHOR = '4026161814'
 
     EMAIL = '4constructionllc@gmail.com'
 
