@@ -1,12 +1,12 @@
-<% @title='4C Construction | Services' %>
+<% @title='4C Construction | ' + @service_shape[:title] %>
 <!--page title-->
 <div class="dzsparallaxer auto-init" data-options='{direction: "reverse"}' style="height: 300px;">
   <div class="semi-black-overlay"></div>
-  <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= @background_picture %>)">
+  <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= @service_shape[:background_picture] %>)">
   </div>
   <div class="semi-black-overlay"></div>
   <div class=" parallax-text center-it page-title">
-    <h2 style="color:#fff"><%= @service_title %></h2>
+    <h2 style="color:#fff"><%= @service_shape[:title] %></h2>
   </div>
 </div>
 <!--page title-->
@@ -17,38 +17,32 @@
     <div class="col-md-3">
       <div class="sidebar-widget">
         <ul class="list-unstyled side-nav">
-          <li class=<%= @custom_homes_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>>Custom Home
-              Building</a></li>
-          <li class=<%= @house_reno_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'remodeling' %>>House
+          <li class=<%= active_class('custom-home-building') %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'custom-home-building' %>>Custom Home Building</a></li>
+          <li class=<%= active_class('house-renovation') %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'house-renovation' %>>House
               Renovation</a></li>
-          <li class=<%= @carpentry_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>>Decks &
+          <li class=<%= active_class('kitchen-remodeling') %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'kitchen-remodeling' %>>Kitchen Remodeling</a></li>
+          <li class=<%= active_class('bathroom-remodeling') %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'bathroom-remodeling' %>>Bathroom Remodeling</a></li>
+          <li class=<%= active_class('decks-and-carpentry') %>>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'decks-and-carpentry' %>>Decks &
               Carpentry</a></li>
-          <li class=<%= @kitchen_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'kitchen' %>>Kitchen Remodeling</a></li>
-          <li class=<%= @bathroom_active %>>
-            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'bathroom' %>>Bathroom Remodeling</a></li>
         </ul>
       </div>
     </div><!--col-->
     <div class="col-md-9">
       <div class="row" style="padding-left: 15px">
-        <h3><%= @subtitle %></h3>
-        <div class="border-width"></div>
         <p>
-          <%= @description.html_safe %>
+          <%= @service_shape[:description].html_safe %>
         </p>
       </div>
-
-      <div class="space20"></div>
     </div>
 
   </div><!--row-->
   <% if @pictures.size >= 0 %>
 
-      <div class="space20"></div>
       <div class="row">
 
         <div class="col-md-9 col-md-offset-3">
@@ -74,7 +68,7 @@
             <div class="swiper-wrapper">
               <% @pictures.each do |picture| %>
                   <div class="swiper-slide">
-                    <img src=<%= "/assets/#{picture}" %> class='img-responsive image-slide'>
+                    <img src=<%= "#{picture}" %> class='img-responsive image-slide'>
                   </div>
               <% end %>
             </div>
