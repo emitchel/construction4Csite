@@ -16,7 +16,7 @@ body {
   line-height: 24px;
   margin: 0;
   background-color: #fff;
-  color: #777;
+  color: #383838;
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -1259,7 +1259,7 @@ master slider
   border-bottom: 1px solid #e1e1e1;
 }
 .card-list li a span {
-  color: #777;
+  color: #383838;
 }
 .card-list li a span em {
   display: inline-block;
@@ -1341,7 +1341,7 @@ Blog style
 }
 .post .post-meta ul li a {
   font-size: 12px;
-  color: #777;
+  color: #383838;
 }
 .post .post-meta ul li a:hover {
   color: #edac15;
@@ -1417,7 +1417,7 @@ accordions
 }
 
 .panel-title {
-  color: #777;
+  color: #383838;
 }
 
 .panel-group .panel .panel-heading .panel-title a:before {

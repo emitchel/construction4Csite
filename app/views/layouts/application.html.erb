@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_180,h_180/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_32,h_32/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_16,h_16/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png">
   <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#dd0300">
-  <link rel="image_src" href="/assets/4c-icon-color.png"/>
+  <meta name="theme-color" content="#EE6D25">
+  <link rel="image_src" href="https://res.cloudinary.com/hddupyjhs/image/upload/c_pad,w_25/v1609366044/icon/4C-Construction-Icon-Orange_nh6ept.png"/>
   <meta name="description" content="We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in the Omaha Metro and some surrounding areas."/>
   <title><%= @title %></title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -44,7 +44,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <span class="readable-small-text"><i class="ion-android-call"></i> <%= Constants::PHONE_NUMBER %></span>
+        <span class="readable-small-text"><i class="ion-android-call"></i><a href="tel:<%= Constants::PHONE_NUMBER_ANCHOR %>" ><%= Constants::PHONE_NUMBER %></a></span>
         <span class="readable-small-text"><i class="ion-ios-email"></i> <a href="<%= url_for :controller => 'pages', :action => 'contact' %>"><%= Constants::EMAIL %></a></span>
       </div>
       <div class="col-sm-6">
@@ -66,7 +66,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=<%= root_path %>><img src="/assets/4c-horizontal-color.png" alt=""></a>
+      <a class="navbar-brand" href=<%= root_path %>>
+      <%= cl_image_tag("logo/4C-Construction-Color_rimfci.png") %>
+      </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -77,11 +79,17 @@
           <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home
-              Building</a></li>
-            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'remodeling' %>">Home
-              Remodeling</a></li>
-            <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>">Decks &
+            <li>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'custom-home-building' %>>Custom Home Building</a></li>
+          <li>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'house-renovation' %>>House
+              Renovation</a></li>
+          <li >
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'kitchen-remodeling' %>>Kitchen Remodeling</a></li>
+          <li >
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'bathroom-remodeling' %>>Bathroom Remodeling</a></li>
+          <li >
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'decks-and-carpentry' %>>Decks &
               Carpentry</a></li>
           </ul>
         </li>
@@ -98,7 +106,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 margin-btm-30">
-        <a href="<%= root_path %>"><img style="height:50px;" src="/assets/4c-horizontal-white-w-red.png" alt=""></a>
+        <a href="<%= root_path %>">
+          <%= cl_image_tag("logo/4C-Construction-White_woy86b", :height=>50, :crop=>"scale") %>
+        </a>
         <div class="space10"></div>
         <p>
           We are a home remodeling/renovating company locally owned and operated in Bellevue, NE. We serve clients in
@@ -109,12 +119,18 @@
       <div class="col-md-6 margin-btm-30">
         <h3>Our Services</h3>
         <ul class="list-unstyled">
-          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>">Custom Home
-            Building</a></li>
-          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'remodeling' %>">Home
-            Remodeling</a></li>
-          <li><a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>">Decks &
-            Carpentry</a></li>
+          <li>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'custom-home-building' %>>Custom Home Building</a></li>
+          <li>
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'house-renovation' %>>House
+              Renovation</a></li>
+          <li >
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'kitchen-remodeling' %>>Kitchen Remodeling</a></li>
+          <li >
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'bathroom-remodeling' %>>Bathroom Remodeling</a></li>
+          <li >
+            <a href=<%= url_for :controller => 'pages', :action => 'services', :service => 'decks-and-carpentry' %>>Decks &
+              Carpentry</a></li>
         </ul>
       </div>
     </div>
@@ -124,7 +140,7 @@
         <ul class="list-inline">
           <li><a href="<%= root_path %>">Home</a></li>
           <li>
-            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'remodeling' %>">Services</a>
+            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'house-renovation' %>">Services</a>
           </li>
           <li>
             <a href="<%= url_for :controller => 'pages', :action => 'contact' %>">Contact Us</a>
@@ -137,7 +153,7 @@
         <span class="bold_italic bottom_lbi">LICENSED - INSURED - BONDED</span>
       </div>
       <div class="col-sm-4 text-right">
-        <span>&copy; 2017. All Right Reserved. <%= Constants::TITLE %></span>
+        <span>&copy; 2021. All Right Reserved. <%= Constants::TITLE %></span>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.1'
+gem 'rails', '~> 5.2.4.4'
 # Use postgres as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -35,6 +35,8 @@ gem 'jquery-rails'
 gem 'js-routes', '~> 1.2.5'
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+gem 'cloudinary'
 
 group :production do
   gem 'rails_12factor'

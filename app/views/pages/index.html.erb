@@ -2,7 +2,7 @@
 <!--start master slider-->
 <div class="clearfix"></div>
 <section id="home" class="dzsparallaxer auto-init dzsparallaxer---window-height use-loading" style="position: relative; height: 800px;" data-options='{  mode_scroll: "normal", easing: "easeIn"}'>
-  <div class="divimage dzsparallaxer--target " data-src="assets/Basement.jpg" style="width: 100%; height: 130%;">
+  <div class="divimage dzsparallaxer--target " data-src="https://res.cloudinary.com/hddupyjhs/image/upload/v1609375812/home/home_backdrop.jpg" style="width: 100%; height: 130%;">
     <div class="hero-parallax">
       <div class="hero-inner">
         <div class="hero-content">
@@ -11,7 +11,8 @@
               <div class="semi-black-overlay"></div>
               <div class="col-sm-8 col-sm-offset-2 text-center">
 
-                <img src="assets/4c-white-w-red.png" alt="" class="img-responsive">
+                <%= cl_image_tag("logo/4C-Construction-White_woy86b.png", :class => "img-responsive") %>
+                
 
                 <div class="space20"></div>
                 <h3 style="color:#fff"><i>"Customer, Cost, Communication, Courtesy"</i></h3>
@@ -52,7 +53,7 @@
   <div class="row">
     <div class="col-md-12 wow animated fadeInUp" data-wow-delay="0.3s">
       <div class="dzsparallaxer auto-init simple-parallax use-loading" style="height: 400px;">
-        <div class="divimage dzsparallaxer--target " data-src="assets/familyroom1.jpg">
+        <div class="divimage dzsparallaxer--target " data-src="https://res.cloudinary.com/hddupyjhs/image/upload/v1609375891/home/passionate_backdrop.jpg">
         </div>
         <div class="semi-black-overlay"></div>
         <div class="preloader-semicircles"></div>
@@ -129,7 +130,9 @@
       <div class="item">
         <div class="service-box">
           <div class="service-thumb">
-            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'homes' %>"><img src="assets/blueprint1.jpg" alt="" class="img-responsive"></a>
+            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'custom-home-building' %>">
+            <img src="https://res.cloudinary.com/hddupyjhs/image/upload/v1609376015/home/custom_home_building_backdrop.jpg" alt="" class="img-responsive">
+            </a>
           </div>
           <div class="service-desc">
             <h4 class="text-uppercase">Custom Home Building</h4>
@@ -140,25 +143,59 @@
       <div class="item">
         <div class="service-box">
           <div class="service-thumb">
-            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'remodeling' %>"><img src="assets/kitchen3.jpg" alt="" class="img-responsive"></a>
+            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'house-renovation' %>">
+            <img src="http://res.cloudinary.com/hddupyjhs/image/upload/v1609707216/house-renovation/familytokitchen_p1zig3.jpg" alt="" class="img-responsive">
+            </a>
           </div>
           <div class="service-desc">
             <h4 class="text-uppercase">Home Remodeling</h4>
             <div class="border-width"></div>
           </div>
         </div>
-      </div><!--services col end-->
+      </div>
+      <!--services col end-->
       <div class="item">
         <div class="service-box">
           <div class="service-thumb">
-            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'carpentry' %>"><img src="assets/aboutus.jpg" alt="" class="img-responsive"></a>
+            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'decks-and-carpentry' %>">
+            <img src="http://res.cloudinary.com/hddupyjhs/image/upload/v1609713818/decks-and-carpentry/20200818_193800_resized_mkh4vp.jpg" alt="" class="img-responsive">
+            </a>
           </div>
           <div class="service-desc">
             <h4 class="text-uppercase">Decks & Carpentry</h4>
             <div class="border-width"></div>
           </div>
         </div>
-      </div><!--services col end-->
+      </div>
+      <!--services col end-->
+      <div class="item">
+        <div class="service-box">
+          <div class="service-thumb">
+            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'kitchen-remodeling' %>">
+            <img src="https://res.cloudinary.com/hddupyjhs/image/upload/v1609715114/bathroom-remodeling/reno1_kcphuj.jpg" alt="" class="img-responsive">
+            </a>
+          </div>
+          <div class="service-desc">
+            <h4 class="text-uppercase">Kitchen Remodeling</h4>
+            <div class="border-width"></div>
+          </div>
+        </div>
+      </div>
+      <!--services col end-->
+      <div class="item">
+        <div class="service-box">
+          <div class="service-thumb">
+            <a href="<%= url_for :controller => 'pages', :action => 'services', :service => 'bathroom-remodeling' %>">
+            <img src="https://res.cloudinary.com/hddupyjhs/image/upload/v1609715533/bathroom-remodeling/mb1_tz6cju.jpg" alt="" class="img-responsive">
+            </a>
+          </div>
+          <div class="service-desc">
+            <h4 class="text-uppercase">Bathroom Remodeling</h4>
+            <div class="border-width"></div>
+          </div>
+        </div>
+      </div>
+      <!--services col end-->
     </div><!--services row end-->
   </div>
 </div>
@@ -219,7 +256,7 @@
         <div class="space30"></div>
       </div>
       <div class="col-sm-6 wow animated fadeIn" data-wow-delay="0.4s">
-        <img style="width:250px" src="assets/4c-icon-color.png" class="center-it img-responsive hidden-xs" alt="">
+        <%= cl_image_tag("icon/4C-Construction-Icon-Orange_nh6ept", :class => "center-it img-responsive hidden-xs", :width => 400, :crop => "scale") %>
       </div>
     </div>
   </div>
