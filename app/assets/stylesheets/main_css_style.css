@@ -796,6 +796,7 @@ Top bar style
 /* 
     Navbar css
 */
+
 .navbar-default {
     background-color: #fff;
     border: 0px;
@@ -822,7 +823,7 @@ Top bar style
 
 .navbar-brand > img {
     display: block;
-    width: 200px;
+    width: 350px;
 }
 
 .navbar-nav > li > a {
@@ -1909,10 +1910,6 @@ div.no-margin {
     font-family: "Droid Sans", sans-serif
 }
 
-.navbar-brand {
-    padding: 20px 20px 20px 20px;
-}
-
 .gallery_product {
     margin-bottom: 30px;
 }
@@ -1949,6 +1946,10 @@ div.no-margin {
     margin: auto;
     height: auto;
     width: auto;
+}
+
+.service-description {
+    font-weight: 600;
 }
 
 /*.swiper-container {*/

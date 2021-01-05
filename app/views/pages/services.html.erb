@@ -34,7 +34,7 @@
     </div><!--col-->
     <div class="col-md-9">
       <div class="row" style="padding-left: 15px">
-        <p>
+        <p class="service-description">
           <%= @service_shape[:description].html_safe %>
         </p>
       </div>
@@ -84,7 +84,7 @@
     var swiper = new Swiper('.swiper1', {
         mode: 'horizontal',
         loop: true,
-        lazyLoading: false,
+        lazyLoading: true,
         preventClicks: true,
         grabCursor: true,
         nextButton: '.next',

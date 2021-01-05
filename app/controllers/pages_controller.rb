@@ -21,7 +21,6 @@ class PagesController < ApplicationController
 
   def services
     @service_shape = get_service_content
-    #@pictures = service_shape[:pictures]
     @pictures = get_images(@service_shape[:url])
   end
 
@@ -73,7 +72,7 @@ class PagesController < ApplicationController
                            background_picture: 'https://res.cloudinary.com/hddupyjhs/image/upload/v1609381826/custom-home-building/homes_backdrop.jpg'}.freeze
 
   def get_images(service_url)
-    Cloudinary::Api.resources(:type => :upload, :prefix => "#{service_url}/")["resources"].map { |str| str["url"] }
+    Cloudinary::Api.resources(:type => :upload, :prefix => "#{service_url}/", :max_results => 100)["resources"].map { |str| str["url"] }
   end
 
   def service_param
